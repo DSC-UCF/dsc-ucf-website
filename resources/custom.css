@@ -7,6 +7,7 @@
     font-weight: 900;
 }
 
+
 .csj-quest {
     font-size: 0.7em;
 }
@@ -159,14 +160,16 @@
         list-style: none;
     }
     .mobile-nav li {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
     }
 
     .mobile-nav a {
         color: inherit;
         text-decoration: none;
         padding: 1rem;
+        display: inline-block;
+        width: 100%;
     }
 
     .mobile-nav a:hover {
