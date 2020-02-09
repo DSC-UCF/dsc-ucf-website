@@ -91,7 +91,8 @@
         left: 51%;
         right: 51%;
         bottom: 0;
-        background: #2098D1;
+        /* background: #2098D1; */
+        background: linear-gradient(90deg, #047CFF 0%, #7F5EFF 100%);
         height: 4px;
         -webkit-transition-property: left, right;
         transition-property: left, right;
