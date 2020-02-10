@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="/styles.css" rel="stylesheet">
     <link href="/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="/resources/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
     <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
@@ -22,20 +24,32 @@
 
 <body class="container full-height-grow">
     <header class="main-header">
-        <a href="/" class="brand-logo">
-            <img src="/images/logo.png">
-            <!-- <img src="resources/dsc-fau.png"> -->
-            <div class="h-om brand-logo-name">Developer Student Club</div>
-        </a>
+        <span class="brand-logo">
+            <a href="/" class="">
+                <img src="/images/logo.png">
+            </a>
+            <a href="/" class="brand-logo-name-a">
+                <div class="brand-logo-name">
+                    <div class="">Developer Student Clubs</div>
+                    <div class="brand-logo-school">Florida Atlantic University</div>
+                </div>
+            </a>
+        </span>
         <nav class="main-nav">
             <div class="navbar">
                 <ul id="nav" class="responsfive">
                     <li class="itm"><a href="/">Home</a></li>
                     <li class="itm active"><a href="/csj1">Study Jam 1</a></li>
                     <li class="mobile-trigger">
-                        <a href="javascript:void(0);" id="mobile-trigger-link" class="icon" onclick="mobileNav()">
-                            <i class="fa fa-bars"></i>
-                        </a>
+                        <button id="mobile-trigger-link"
+                            class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+                            onclick="mobileNav()">menu
+                        </button>
+                        <!-- <a href="javascript:void(0);" id="mobile-trigger-link" class="icon" onclick="mobileNav()">
+                                                <i class="material-icons">
+                                                    menu
+                                                </i>
+                                            </a> -->
                     </li>
                 </ul>
                 <!-- <div class="mt">
@@ -51,6 +65,30 @@
         </nav>
 
     </header>
+    <aside class="mdc-drawer mdc-drawer--modal mdc-drawer--dismissible">
+        <div class="mdc-drawer__header">
+            <button id="mobile-trigger-link-mn" class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+                onclick="mobileNav()">menu
+            </button>
+            <div class="mdc-drawer__title" id="mn-title">
+                <a href="/">
+                    <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
+                </a>
+                <!-- <img id="mn-logo" src="/images/logo.png" /> -->
+            </div>
+        </div>
+        <div class="mdc-drawer__content">
+
+            <nav class="mdc-list" id="new-mn-nav" dir="ltr">
+                <a style="display: none" id="mn-sample" class="mdc-list-item mdc-ripple-surface" href="#"
+                    aria-current="page">
+                    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i> -->
+                    <span class="mdc-list-item__text"></span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+    <div class="mdc-drawer-scrim"></div>
     <div class="mn">
         <div id="mn-overlay" class="hidden"></div>
         <nav id="mobile-nav" class="mobile-nav hidden">
@@ -118,7 +156,7 @@
                     <li>
                         <a href="https://www.instagram.com/dscfau/" target="blank"> <i class="fab fa-instagram"></i></a>
                     </li>
-                    <!-- <li><a href="#" target="blabk"> <i class="fab fa-discord"></i></a></li> -->
+                    <li><a href="https://discord.gg/39qJ3sE" target="blabk"> <i class="fab fa-discord"></i></a></li>
                     <li>
                         <a href="https://twitter.com/dscfau" target="blank"><i class="fab fa-twitter-square"></i></a>
                     </li>
@@ -127,9 +165,12 @@
         </div>
 
         <div class="footer-menu-one">
-            <ul>
-                <li>Theme made with <i class="fas fa-heart" style="color: red;"></i> by <a
-                        href="https://github.com/Joy2469/WebsiteClub">Aditi Jain</a></li>
+            <ul class="credits">
+                <li><span>Theme made with <i class="fas fa-heart" style="color: red;"></i> by <a
+                            href="https://github.com/Joy2469/WebsiteClub">
+                            Aditi Jain</a></span><span class="h-om cred-sep">, </span>
+                    <span>Modified by Benjamin Thaw</span>
+                </li>
             </ul>
             <br />
             <ul class="info-links">
@@ -144,6 +185,8 @@
     <div class="home-page-circle-1"></div>
     <div class="home-page-circle-2"></div>
     <div class="home-page-circle-3"></div>
+    <div class="home-page-circle-4"></div>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script src="/resources/scripts.js"></script>
 </body>
 
