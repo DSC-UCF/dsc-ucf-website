@@ -1,0 +1,27 @@
+Hey {FIRST}!
+
+Welcome to the Developer Student Club (DSC) at FAU. Here, we welcome students from all majors to learn essential skills
+surrounding Google Cloud and other cutting-edge developer technologies. In school, we often see that students learn skills in lectures but never get the chance to use those skills before they're needed. Developer Student Clubs aim to bridge the gap between theory and practice through hands-on practice.
+
+Throughout the coming months, we'll be hosting many exciting events, including Cloud Study Jams on various topics (often about Cloud technologies), hands-on workshops, and hackathons. Additionally, students will get the chance to solve a problem they identify in their local community using Google Cloud technologies by participating in the Solution Challenge.
+
+To stay in the loop, make sure to join our Discord server below to receive updates, network with other members, and share your ideas to make this club even better
+
+DSC Pages:
+
+Website: https://dscfau.com
+Discord Server: https://discord.gg/39qJ3sE
+Twitter: https://twitter.com/dscfau
+Instagram: https://www.instagram.com/dscfau/
+
+Thanks for joining! Feel free to contact me with any questions.
+
+Alex Robinson
+FAU Developer Student Club - President
+407-701-5208
+RobinsonAlex2019@fau.edu
+
+
+
+
+Note: You are receiving this email because you filled out the club's contact form. If you believe this was a mistake or you no longer wish to receive emails, send me an email to be removed from the mailing list.
