@@ -72,7 +72,7 @@
 
 
 .person {
-    width: 600px;
+    width: 700px;
     padding-left: 230px;
     padding-top: 30px;
     padding-bottom: 70px;
@@ -199,4 +199,23 @@ strong {
     margin: -3px 0 5px 0;
     display: block;
     font-size: 0.8em;
+}
+
+@media (max-width: 750px) {
+    .person {
+        width: unset;
+        padding-left: unset;
+    }
+    .person-badge {
+        display: block;
+        position: unset;
+        margin-bottom: 20px;
+        margin-left: 9%;
+        margin-right: 9%;
+
+    }
+    .person h3, .person strong, .person p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
