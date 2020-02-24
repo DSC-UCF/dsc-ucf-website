@@ -10,10 +10,10 @@ if (window.location.pathname.slice(-1) == "/") {
     testPath = window.location.pathname.slice(0, -1);
 }
 
-console.log("CURRENT PATH: " + testPath);
+// console.log("CURRENT PATH: " + testPath);
 if (movedPages[testPath] != undefined) {
 
-    console.log("PAGE HAS BEEN MOVED TO: " + movedPages[testPath]);
+    // console.log("PAGE HAS BEEN MOVED TO: " + movedPages[testPath]);
     var newPath = movedPages[testPath];
     var newLink;
     if (window.location.search != undefined) {
