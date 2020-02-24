@@ -4,6 +4,7 @@ const movedPages = {
     '/test/hi1': '/hi2/3'
 }
 
+const linearProgress = new mdc.linearProgress.MDCLinearProgress(document.querySelector('#linProg'));
 
 var testPath = window.location.pathname;
 if (window.location.pathname.slice(-1) == "/") {
@@ -21,6 +22,9 @@ if (movedPages[testPath] != undefined) {
     } else {
         newLink = newPath;
     }
+
+    document.querySelector("#linProg").style.display = "";
+    document.querySelector("#moved-prog-br").style.display = "";
 
     document.querySelector("#not-found-title").innerHTML = "Page Moved";
     document.querySelector("#not-found-message").innerHTML = "The page you requested has been moved. Redirecting...";

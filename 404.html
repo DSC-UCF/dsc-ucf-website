@@ -27,7 +27,7 @@
 
 
     <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
-    <title>Page Not Found | FAU Developer Student Club</title>
+    <title>Page Not Found | FAU Developer Student Clubs</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
@@ -64,22 +64,8 @@
                             class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
                             onclick="mobileNav()">menu
                         </button>
-                        <!-- <a href="javascript:void(0);" id="mobile-trigger-link" class="icon" onclick="mobileNav()">
-                                                <i class="material-icons">
-                                                    menu
-                                                </i>
-                                            </a> -->
                     </li>
                 </ul>
-                <!-- <div class="mt">
-                    <ul>
-                        <span class="mobile-trigger">
-                            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </span>
-                    </ul>
-                </div> -->
             </div>
         </nav>
 
@@ -93,7 +79,6 @@
                 <a href="/">
                     <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
                 </a>
-                <!-- <img id="mn-logo" src="/images/logo.png" /> -->
             </div>
         </div>
         <div class="mdc-drawer__content">
@@ -124,10 +109,25 @@
             <h1 id="not-found-title" class="title">Page Not Found</h1>
             <!-- <img style="margin-top: 0; width: 40%" src="/resources/logo_gcp/logo_gcp_horizontal_rgb.png" /> -->
             <span id="not-found-message" class="subtitle">The page you were looking for could not be found.</span>
+
+            <div style="display: none;" id="linProg" role="progressbar"
+                class="mdc-linear-progress mdc-linear-progress--indeterminate">
+
+                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+                    <span class="mdc-linear-progress__bar-inner"></span>
+                </div>
+                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+                    <span class="mdc-linear-progress__bar-inner"></span>
+                </div>
+            </div>
+            <div style="display: none;" id="moved-prog-br">
+                <br />
+            </div>
             <div class="btn-action">
                 <a id="not-found-moved" style="display:none" class="btn">Go to New Location</a>
                 <a id="not-found-home-btn" href="/" class="btn">Home Page</a>
             </div>
+
         </div>
         <!-- <div class="img-wrapper">
             <div class="gcp-logo"></div>
