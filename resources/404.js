@@ -1,7 +1,8 @@
 const movedPages = {
     "/testing1": "/testing2",
     "/testing2": "/about",
-    '/test/hi1': '/hi2/3'
+    '/test/hi1': '/hi2/3',
+    '/studyjam1': '/csj1'
 }
 
 const linearProgress = new mdc.linearProgress.MDCLinearProgress(document.querySelector('#linProg'));
@@ -13,6 +14,8 @@ if (window.location.pathname.slice(-1) == "/") {
 
 // console.log("CURRENT PATH: " + testPath);
 if (movedPages[testPath] != undefined) {
+
+
 
     // console.log("PAGE HAS BEEN MOVED TO: " + movedPages[testPath]);
     var newPath = movedPages[testPath];
@@ -32,8 +35,12 @@ if (movedPages[testPath] != undefined) {
     document.querySelector("#not-found-moved").setAttribute('href', newLink);
     document.querySelector("#not-found-moved").style.display = "";
 
+    dataLayer.push({
+        'event': 'pageMoved',
+        'movedTo': newPath,
+        'oldLink': window.location.pathname
+    });
     window.location.href = newLink;
-
 
 }
 
