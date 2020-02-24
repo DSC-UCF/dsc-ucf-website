@@ -103,10 +103,13 @@
 
 
         <div class="call-to-action">
-            <h1 class="title">Page Not Found</h1>
+            <h1 id="not-found-title" class="title">Page Not Found</h1>
             <!-- <img style="margin-top: 0; width: 40%" src="/resources/logo_gcp/logo_gcp_horizontal_rgb.png" /> -->
-            <span class="subtitle">The page you were looking for could not be found.</span>
-            <a href="/" class="btn">Home Page</a>
+            <span id="not-found-message" class="subtitle">The page you were looking for could not be found.</span>
+            <div class="btn-action">
+                <a id="not-found-moved" style="display:none" class="btn">Go to New Location</a>
+                <a id="not-found-home-btn" href="/" class="btn">Home Page</a>
+            </div>
         </div>
         <!-- <div class="img-wrapper">
             <div class="gcp-logo"></div>
@@ -155,6 +158,7 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script id="navS" src="/resources/nav.js?page=404"></script>
     <script src="/resources/scripts.js"></script>
+    <script src="/resources/404.js"></script>
 </body>
 
 </html>
