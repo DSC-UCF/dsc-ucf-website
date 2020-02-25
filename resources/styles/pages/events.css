@@ -114,8 +114,7 @@
 }
 
 
-.event-badge:not(.no-br)  {
-    border-radius: 0 0 100px 100px;
+.event-badge:not(.no-br), .event-badge:not(.no-br) img {
     border-radius: 50%;
 }
 .event-badge img{
