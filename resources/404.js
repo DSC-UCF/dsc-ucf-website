@@ -1,8 +1,8 @@
 const movedPages = {
-    "/testing1": "/testing2",
-    "/testing2": "/about",
-    '/test/hi1': '/hi2/3',
-    '/studyjam1': '/csj1'
+    '/studyjam1': '/csj1',
+    '/csj1': '/events/csj1',
+    '/csj1/index.html': '/events/csj1',
+    '/csj1/template.html': '/events/csj1/template.html',
 }
 
 const linearProgress = new mdc.linearProgress.MDCLinearProgress(document.querySelector('#linProg'));

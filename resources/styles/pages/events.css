@@ -139,10 +139,16 @@
 }
 
 strong.event-type {
-    color: #ababab;
+    color: #929292;
     margin: -3px 0 5px 0;
     display: block;
     font-size: 1.0em;
+}
+.event-date {
+    color: #929292;
+    margin: -3px 0 5px 0;
+    display: block;
+    font-size: .9em;
 }
 
 /* .event-badge  {
@@ -174,12 +180,18 @@ strong.event-type {
   transform: scale(1.1);
 }
 
+.event-buttons .btn, .event-buttons {
+    transition: 500ms;
+}
 .event, .event-badge-transition, .event-main-section, .event-description {
     transition: 500ms;
 }
 .event-badge-transition, .event-badge img {
     transition: 300ms;
 }
+
+
+
 
 @media (max-width: 750px) {
     .event {
@@ -208,6 +220,14 @@ strong.event-type {
     }
     .event-badge img {
         width: 100px
+    }
+    .event-buttons .btn {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .event-buttons {
+        margin: auto;
+        text-align: center;
     }
 
 }
