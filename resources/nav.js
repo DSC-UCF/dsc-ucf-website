@@ -17,6 +17,7 @@ if (navScriptTag != null) {
 var navItems = {
     'home': { "name": "Home", "url": "/" },
     'about': { "name": "About Us", "url": "/about" },
+    'events': { "name": "Events", "url": "/events" },
     'csj1': { "name": "Study Jam 1", "url": "/csj1" }
 }
 
