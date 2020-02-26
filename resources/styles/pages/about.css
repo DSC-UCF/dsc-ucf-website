@@ -110,7 +110,7 @@
     transition: 500ms;
 }
 
-.person-badge:after {
+/* .person-badge:after {
     background: linear-gradient(to top, #FC0 0%, #EEE 100%);
     opacity: 0;
 }
@@ -137,7 +137,7 @@
 
 .person:nth-child(7) .person-badge:after {
     background: linear-gradient(to top, #F88 0%, #EEE 100%);
-}
+} */
 
 
 .person-badge:hover:after {
