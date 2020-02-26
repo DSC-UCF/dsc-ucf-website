@@ -34,11 +34,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: .5rem;
     padding: .75rem;
     width: 170px;
     height: 180px;
     background-color: #202027;
+    
+}
+.icon:not("#mobile-trigger-link") {
+    margin: .5rem;
     margin-bottom: 2rem;
 }
 
