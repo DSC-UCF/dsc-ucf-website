@@ -86,7 +86,7 @@
 .person-badge {
     width: 200px;
     height: 200px;
-    border-radius: 0 0 100px 100px;
+    /* border-radius: 0 0 100px 100px; */
     overflow: hidden;
     transform: rotate(0deg);
     /* To force its own layer */
@@ -96,6 +96,10 @@
     border-radius: 50%;
     width: 200px;
     box-shadow: gray 0 0 10px;
+}
+
+.person-badge img {
+    border-radius: 50%;
 }
 
 .person-badge:before,
