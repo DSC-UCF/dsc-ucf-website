@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Data Layer -->
-    <script>dataLayer = [];</script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -12,8 +10,7 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');
-    </script>
+        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -21,13 +18,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="/resources/styles/styles.css" rel="stylesheet">
     <link href="/resources/styles/pages/index.css" rel="stylesheet">
+    <link href="/resources/styles/pages/events.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="/resources/styles/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
     <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
-    <title>Page Not Found | FAU Developer Student Clubs</title>
+    <title>Events | FAU Developer Student Club</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
@@ -37,12 +35,12 @@
     <meta name="keywords" content="Google Developer Student Clubs, Florida Atlantic, FAU, Coding">
 </head>
 
-
 <body class="container full-height-grow">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GLBH2" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <header class="main-header">
         <span class="brand-logo">
             <a href="/" class="">
@@ -79,6 +77,7 @@
                 <a href="/">
                     <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
                 </a>
+                <!-- <img id="mn-logo" src="/images/logo.png" /> -->
             </div>
         </div>
         <div class="mdc-drawer__content">
@@ -92,6 +91,7 @@
             </nav>
         </div>
     </aside>
+    <div class="mdc-drawer-scrim"></div>
     <div class="mn">
         <div id="mn-overlay" class="hidden"></div>
         <nav id="mobile-nav" class="mobile-nav hidden">
@@ -102,38 +102,95 @@
 
         </nav>
     </div>
-    <section class="home-main-section">
-
-
+    <section class="event-main-section">
         <div class="call-to-action">
-            <h1 id="not-found-title" class="title">Page Not Found</h1>
-            <!-- <img style="margin-top: 0; width: 40%" src="/resources/logo_gcp/logo_gcp_horizontal_rgb.png" /> -->
-            <span id="not-found-message" class="subtitle">The page you were looking for could not be found.</span>
+            <h1 class="title">Events</h1>
+            We plan awesome events for everyone. And yes! we like to study and chill.
+            <!-- <br /> <br />
+            Access our <a rel="noopener" href="https://calendar.google.com/calendar/b/3?cid=ZHNjdXRkQGdtYWlsLmNvbQ"
+                target="_blank"> Event calendar.</a> -->
+        </div>
+        <!--                DEsigned by Freepik href="https://www.freepik.com/free-photos-vectors/delivery">Delivery vector created by freepik - www.freepik.com</a>-->
+        <!-- <img class="event-image" src="/images/events.png" alt="Team work flat art"
+            href="https://www.freepik.com/free-photos-vectors/delivery" target="_blank"> -->
+    </section>
+    <section class="event_description">
 
-            <div style="display: none;" id="linProg" role="progressbar"
-                class="mdc-linear-progress mdc-linear-progress--indeterminate">
+        <div class="event">
+            <div class="event-badge">
+                <a href="/events/csj1">
+                    <img id="flutter-image" class="normal" alt="flutter logo"
+                        src="/resources/events/gcp-essentials-badge.png" target="_blank">
+                </a>
+            </div>
+            <h3>GCP Essentials</h3>
+            <strong class="event-type">Study Jam</strong>
+            <span class="event-date">February 8th, 2020</span>
+            <p>
+                Study Jams are group learning programs designed to give students practical experience in Google Cloud
+                technologies. Students come together to build their skills through interactive lessons and hands-on
+                labs.
+                <br /><br />
+                Google Cloud Platform Essentials is all about learning the fundamental skills necesary when using the
+                GCP, from creating Compute Engine instances and Kubernetes clusters to creating a real
+                web server with load balancing.
+                <br /><br />
+                Upon completing a Study Jam quest, attendees earn a cool badge to show off their skills, and of course,
+                it can be added to their LinkedIn profiles. Students also gain full access to Qwiklabs for up to two
+                months, allowing them to explore the GCP and other Cloud technologies further until the next meetup!
+            </p>
+            <div class="event-buttons">
+                <!-- <a href="/csj1" class="event-rsvp btn">RSVP</a> -->
+                <a href="/events/csj1" class="event-details btn">More Details</a>
+            </div>
+        </div>
 
-                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
-                    <span class="mdc-linear-progress__bar-inner"></span>
-                </div>
-                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
-                    <span class="mdc-linear-progress__bar-inner"></span>
-                </div>
+        <div class="event">
+            <div class="event-badge">
+                <a href="#">
+                    <img class="normal" src="/images/SolutionChallenge.jpg" alt="brainstorm" target="_blank">
+                </a>
             </div>
-            <div style="display: none;" id="moved-prog-br">
-                <br />
-            </div>
-            <div class="btn-action">
-                <a id="not-found-moved" style="display:none" class="btn">Go to New Location</a>
-                <a id="not-found-home-btn" href="/" class="btn">Home Page</a>
+            <h3>Solution Challenge</h3>
+            <strong class="event-type">Projects</strong>
+            <p>
+                The Google Solution Challenge is an annual competition open to the university students under the
+                mentorship
+                umbrella of a DSC chapter. The solution must feature one or more Google technologies and must address a
+                local problem faced by a business, organization, NGO, etc.
+                <br /></p>
+            <div class="event-buttons">
+                <!-- <a href="/solution" class="event-rsvp btn">Participate</a> -->
+                <!-- <a href="/events/solution-challenge" class="event-details btn btn-secondary-no">More Details</a> -->
             </div>
 
         </div>
-        <!-- <div class="img-wrapper">
-            <div class="gcp-logo"></div>
-        </div> -->
 
+        <!-- <div class="event">
+            <div class="event-badge">
+                <a href="https://crio.do/launch/">
+                    <img class="normal" src="/images/crio.jpg" alt="Crio.Do logo" target="_blank">
+                </a>
+            </div>
+            <h3>DSC+Crio.Do: Product Development</h3>
+            <strong class="event-type">11, 12 and 13 Jan</strong>
+            <p>
+
+                In this virtual weekend workshop, you will experience the entire product development lifecycle, right
+                from
+                getting a feature request from your product manager, to building, testing, and pushing the feature out,
+                in a
+                work-like environment, with guidance from Tech Leads and the Crio Platform. While going through this,
+                you
+                will sharpen your understanding of key concepts like Serialisation, Consuming 3rd Party Rest APIs,
+                Interfaces and more.
+                <br /></p>
+            <span>RSVP:</span><a href="https://forms.gle/GZHh91owT38jVafN6 " target="blabk" style="color: inherit">
+                here</a>
+
+        </div> -->
     </section>
+
     <footer>
         <div class="footer-main-div">
 
@@ -173,10 +230,10 @@
     <div class="home-page-circle-2"></div>
     <div class="home-page-circle-3"></div>
     <div class="home-page-circle-4"></div>
+
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script id="navS" src="/resources/nav.js?page=404"></script>
+    <script id="navS" src="/resources/nav.js?page=events"></script>
     <script src="/resources/scripts.js"></script>
-    <script src="/resources/404.js"></script>
 </body>
 
 </html>

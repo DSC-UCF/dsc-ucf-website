@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -25,6 +36,10 @@
 
 
 <body class="container full-height-grow">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GLBH2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="main-header">
         <span class="brand-logo">
             <a href="/" class="">
@@ -40,8 +55,7 @@
         <nav class="main-nav">
             <div class="navbar">
                 <ul id="nav" class="responsfive">
-                    <li class="itm active"><a href="/">Home</a></li>
-                    <li class="itm"><a href="/csj1">Study Jam 1</a></li>
+                    <!-- Add items in nav.js -->
                     <li class="mobile-trigger">
                         <button id="mobile-trigger-link"
                             class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
@@ -107,7 +121,8 @@
         <div class="call-to-action">
             <h1 class="title">Developer Student Clubs<span class="h-om"> - </span><span class="title-small">Florida
                     Atlantic University</span></h1>
-            <span class="subtitle">Helping students bridge the gap between theory and practice.
+            <span class="subtitle">Helping students bridge the gap between <strong>theory</strong> and
+                <strong>practice</strong>.
             </span>
             <span class="content">The Developer Student Club at Florida Atlantic University is committed
                 to catering to students interested Google Developer technologies. Students have the opportunity to
@@ -175,6 +190,7 @@
     <div class="home-page-circle-4"></div>
 
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script id="navS" src="/resources/nav.js?page=home"></script>
     <script src="/resources/scripts.js"></script>
 </body>
 
