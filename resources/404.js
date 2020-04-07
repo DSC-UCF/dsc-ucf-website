@@ -3,6 +3,7 @@ const movedPages = {
     '/csj1': '/events/csj1',
     '/csj1/index.html': '/events/csj1',
     '/csj1/template.html': '/events/csj1/template.html',
+    '/csj2/survey': "https://forms.gle/gaJbGGNkDBqgATUXA"
 }
 
 const linearProgress = new mdc.linearProgress.MDCLinearProgress(document.querySelector('#linProg'));
