@@ -10,8 +10,8 @@
 }
 
 .title {
-    font-size: unset;
-    margin-bottom: unset;
+    /* font-size: unset;
+    margin-bottom: unset; */
 }
 
 .title h1 {
@@ -389,9 +389,9 @@
     /* ul.response  */
 
 
-    /* .title {
+    .title {
         font-size: 1.5rem;
-    } */
+    }
     
 
     .navbar ul li {
