@@ -4,7 +4,13 @@ const movedPages = {
     '/csj1/index.html': '/events/csj1',
     '/csj1/template.html': '/events/csj1/template.html',
     '/csj2/survey': "https://forms.gle/gaJbGGNkDBqgATUXA",
-    '/register/studyjam3': "https://forms.gle/5TiL2bx2L6rBaEDCA"
+    '/register/studyjam3': "https://forms.gle/5TiL2bx2L6rBaEDCA",
+    '/go/studyjam3': "https://google.qwiklabs.com/quests/40?event=Your&utm_source=qwiklabs&utm_medium=lp&utm_campaign=studyjam",
+    '/go/gcp-essentials': "https://google.qwiklabs.com/quests/23?event=Your&utm_source=qwiklabs&utm_medium=lp&utm_campaign=studyjam",
+    '/go/canvas': "https://canvas.fau.edu/enroll/3CJ98E",
+    '/events/csj3': "/events/#csj3",
+    '/events/csj2': "/events/#csj2",
+    '/solution': "/events/#solution-challenge"
 }
 
 const linearProgress = new mdc.linearProgress.MDCLinearProgress(document.querySelector('#linProg'));
