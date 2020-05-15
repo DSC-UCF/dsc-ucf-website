@@ -204,22 +204,37 @@ strong {
     display: block;
     font-size: 0.8em;
 }
+.person {
+    transition: 500ms; 
+}
+.person-badge {
+    transition: 500ms; 
+}
+.person h3, .person strong, .person p {
+    transition: 500ms; 
+}
 
 @media (max-width: 750px) {
     .person {
         width: unset;
         padding-left: unset;
+        
     }
     .person-badge {
         display: block;
         position: unset;
         margin-bottom: 20px;
-        margin-left: 9%;
-        margin-right: 9%;
+        /* margin-left: 9%;
+        margin-right: 9%; */
+        margin: auto;
+        margin-bottom: 15px;
 
     }
     .person h3, .person strong, .person p {
         padding-left: 10%;
         padding-right: 10%;
+    }
+    .person h3, .person strong {
+        text-align: center;
     }
 }
