@@ -207,6 +207,7 @@ strong.event-type {
         margin-bottom: 20px;
         margin-left: 9%;
         margin-right: 9%;
+        margin: auto;
     }
     .event-main-section {
         padding-left: 5%;
@@ -229,6 +230,9 @@ strong.event-type {
     }
     .event-buttons {
         margin: auto;
+        text-align: center;
+    }
+    .event-type, .event-date, .event h3 {
         text-align: center;
     }
 
