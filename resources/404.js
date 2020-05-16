@@ -10,7 +10,9 @@ const movedPages = {
     '/go/canvas': "https://canvas.fau.edu/enroll/3CJ98E",
     '/events/csj3': "/events/#csj3",
     '/events/csj2': "/events/#csj2",
-    '/solution': "/events/#solution-challenge"
+    '/solution': "/events/#solution-challenge",
+    '/survey/studyjam3': "https://forms.gle/oK1kxs4Kdyeo2Tir5",
+    '/go/csj3-webex': "https://fau.webex.com/fau/onstage/g.php?MTID=e20fdb8e329d2f7ab48fa18ffa0134405"
 }
 
 const linearProgress = new mdc.linearProgress.MDCLinearProgress(document.querySelector('#linProg'));
