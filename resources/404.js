@@ -12,7 +12,9 @@ const movedPages = {
     '/events/csj2': "/events/#csj2",
     '/solution': "/events/#solution-challenge",
     '/survey/studyjam3': "https://forms.gle/oK1kxs4Kdyeo2Tir5",
-    '/go/csj3-webex': "https://fau.webex.com/fau/onstage/g.php?MTID=e20fdb8e329d2f7ab48fa18ffa0134405"
+    '/go/csj3-webex': "https://fau.webex.com/fau/onstage/g.php?MTID=e20fdb8e329d2f7ab48fa18ffa0134405",
+    '/go/contact': 'https://bit.ly/DSCFAU',
+    '/go/discord': 'https://discord.gg/39qJ3sE',
 }
 
 const linearProgress = new mdc.linearProgress.MDCLinearProgress(document.querySelector('#linProg'));
