@@ -15,6 +15,76 @@
     padding-left: 1px;
     padding-right: 1px; */
 } 
+#nav .itm_dropdown {
+    overflow: unset;
+    z-index: 10;
+}
+#nav .itm_dropdown .nav_dropdown {
+    display: block;
+    /* visibility: hidden; */
+    position: fixed;
+    top: 0;
+    left: -25%;
+    width: 150%;
+    z-index: -10;
+    opacity: 0;
+    transition: .25s ease-in-out;
+    /* background-color: pink; */
+
+}
+.nav_dropdown {
+    
+    height: 0px;
+    /* background-color: blue; */
+}
+#nav .itm_dropdown:hover .nav_dropdown {
+    opacity: 1;
+    /* visibility: visible; */
+    
+    /* left: 0; */
+    
+}
+
+#nav .itm_dropdown .nav_dropdown li, #nav .itm_dropdown .nav_dropdown a {
+    display: block;
+    /* background-color: #34a853; */
+    /* color: white; */
+}
+/* .nav_dropdown li:first-child {
+    border-radius: 16px 16px 0 0;
+    border-top: 1px solid black;
+    
+}
+.nav_dropdown li:last-child {
+    border-radius:  0 0 16px 16px;
+    border-bottom: 1px solid black;
+}
+.nav_dropdown li {
+    border-left: 1px solid black;
+    border-right: 1px solid black; */
+
+ /* } */
+
+.nav_dropdown li a {
+    /* height: 40px; */
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.nav_dropdown li:first-child {
+    margin-top: 26px;
+    padding-top: 10px;
+    /* padding-top: 10px; */
+}
+.nav_dropdown li.active a {
+    color: #adadad;
+    /* padding-top: 10px; */
+}
+
+/* .youtube_embed {
+    width:905; 
+    height:509;
+} */
+
 
 
 .title h1 {
@@ -90,6 +160,20 @@
     pointer-events: none;
     user-select: none;
     
+}
+.section_title {
+    padding-top: 10px;
+    display: block;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.youtube_embed {
+    display: block;
+    width: 72vw;
+    height: 40.5vw;
+    max-width: 720px;
+    max-height: 405px;
+    margin: auto;
 }
 
 @media screen and (min-width: 1100px) {
@@ -235,7 +319,7 @@
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    .main-nav .itm:before, .main-nav .active:before {
+    .main-nav .itm:before, .main-nav .itm.active:before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -258,7 +342,7 @@
         left: 0;
         right: 0;
     }
-    .main-nav .active:before {
+    .main-nav .itm.active:before {
         left: 0;
         right: 0;
         margin-left: 2px;
@@ -537,7 +621,9 @@
         transform: translateX(8px);
     }
     
-
+    .mn-sub-el {
+        margin-left: 50px !important;
+    }
 
 
 }
