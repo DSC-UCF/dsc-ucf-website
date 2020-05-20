@@ -15,75 +15,30 @@
     padding-left: 1px;
     padding-right: 1px; */
 } 
-#nav .itm_dropdown {
-    overflow: unset;
-    z-index: 10;
-}
-#nav .itm_dropdown .nav_dropdown {
+
+.main-nav ul.nav_dropdown2, .main-nav ul.mdc-menu__selection-group {
     display: block;
-    /* visibility: hidden; */
-    position: fixed;
-    top: 0;
-    left: -25%;
-    width: 150%;
-    z-index: -10;
-    opacity: 0;
-    transition: .25s ease-in-out;
-    /* background-color: pink; */
-
 }
-.nav_dropdown {
-    
-    height: 0px;
-    /* background-color: blue; */
+.itm_dropdown2 .mdc-menu {
+    top: 40px !important;
 }
-#nav .itm_dropdown:hover .nav_dropdown {
-    opacity: 1;
-    /* visibility: visible; */
-    
-    /* left: 0; */
-    
+.itm_dropdown2 {
+    z-index: 100;
+}
+.itm_dropdown2 .active {
+    /* transition-duration: 75ms;
+    opacity: .12; */
+    /* background-color: lightgray; */
+    color: black;
+}
+.mdc-list-item__graphic {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.mdc-menu__selection-group .mdc-list-item.hasIcon {
+    padding-left: 0px;
 }
 
-#nav .itm_dropdown .nav_dropdown li, #nav .itm_dropdown .nav_dropdown a {
-    display: block;
-    /* background-color: #34a853; */
-    /* color: white; */
-}
-/* .nav_dropdown li:first-child {
-    border-radius: 16px 16px 0 0;
-    border-top: 1px solid black;
-    
-}
-.nav_dropdown li:last-child {
-    border-radius:  0 0 16px 16px;
-    border-bottom: 1px solid black;
-}
-.nav_dropdown li {
-    border-left: 1px solid black;
-    border-right: 1px solid black; */
-
- /* } */
-
-.nav_dropdown li a {
-    /* height: 40px; */
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-.nav_dropdown li:first-child {
-    margin-top: 26px;
-    padding-top: 10px;
-    /* padding-top: 10px; */
-}
-.nav_dropdown li.active a {
-    color: #adadad;
-    /* padding-top: 10px; */
-}
-
-/* .youtube_embed {
-    width:905; 
-    height:509;
-} */
 
 
 
@@ -318,6 +273,9 @@
         overflow: hidden;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+    .main-nav .itm_dropdown2 {
+        overflow: unset;
     }
     .main-nav .itm:before, .main-nav .itm.active:before {
         content: "";
