@@ -1,7 +1,6 @@
 const movedPages = {
     '/studyjam1': '/csj1',
     '/csj1': '/events/csj1',
-    '/csj1/template.html': '/events/csj1/template.html',
     '/csj2/survey': "https://forms.gle/gaJbGGNkDBqgATUXA",
     // '/register/studyjam3': "https://forms.gle/5TiL2bx2L6rBaEDCA",
     '/register/studyjam3': "/events/csj3",
