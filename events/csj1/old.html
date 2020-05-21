@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Data Layer -->
-    <script>dataLayer = [];</script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -12,8 +10,7 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');
-    </script>
+        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -27,7 +24,7 @@
 
 
     <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
-    <title>Loading... | FAU Developer Student Clubs</title>
+    <title>Cloud Study Jam #1 | FAU Developer Student Club</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
@@ -64,8 +61,22 @@
                             class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
                             onclick="mobileNav()">menu
                         </button>
+                        <!-- <a href="javascript:void(0);" id="mobile-trigger-link" class="icon" onclick="mobileNav()">
+                                                <i class="material-icons">
+                                                    menu
+                                                </i>
+                                            </a> -->
                     </li>
                 </ul>
+                <!-- <div class="mt">
+                    <ul>
+                        <span class="mobile-trigger">
+                            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </span>
+                    </ul>
+                </div> -->
             </div>
         </nav>
 
@@ -79,6 +90,7 @@
                 <a href="/">
                     <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
                 </a>
+                <!-- <img id="mn-logo" src="/images/logo.png" /> -->
             </div>
         </div>
         <div class="mdc-drawer__content">
@@ -92,6 +104,7 @@
             </nav>
         </div>
     </aside>
+    <div class="mdc-drawer-scrim"></div>
     <div class="mn">
         <div id="mn-overlay" class="hidden"></div>
         <nav id="mobile-nav" class="mobile-nav hidden">
@@ -106,27 +119,44 @@
 
 
         <div class="call-to-action">
-            <h1 id="not-found-title" class="title">Loading...</h1>
+            <h1 class="title"><span>Cloud Study Jam 1<span class="h-om">:</span> </span><span class="title-small">GCP
+                    Essentials</span></h1>
             <!-- <img style="margin-top: 0; width: 40%" src="/resources/logo_gcp/logo_gcp_horizontal_rgb.png" /> -->
-            <span id="not-found-message" class="subtitle"></span>
+            <span class="subtitle">We hope you enjoyed our very first Cloud Study Jam! Using Qwiklabs, our participants
+                got hands-on practice with the Google Cloud Platform (GCP) by creating virtual machines, working with
+                Kubernetes clusters, and configuring load balancers. Members tested their skills by completing a
+                challenge lab.</span>
 
-            <div id="linProg" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate">
+            <h2 class="headline">Didn't make it?</h2>
+            <span>If you didn't make it to this first Study Jam, that's alright. We have many more exciting events
+                planned for the future. Make sure to fill out the contact form and join our Discord so you can
+                recieve updates and communicate with other members.</span>
+            <br />
 
-                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
-                    <span class="mdc-linear-progress__bar-inner"></span>
-                </div>
-                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
-                    <span class="mdc-linear-progress__bar-inner"></span>
-                </div>
-            </div>
-            <div id="moved-prog-br">
-                <br />
-            </div>
-            <div class="btn-action">
-                <a id="not-found-moved" style="display:none" class="btn">Go to New Location</a>
-                <a id="not-found-home-btn" href="/" class="btn">Home Page</a>
-            </div>
+            <h2 class="headline">What's next?</h2>
+            <span>After starting the first lab, you should have received 30 days to complete the rest of the quest.
+                Upon completing the rest of the GCP Essentials quest, you will recieve an
+                additional 30 days of unlimited access to Qwiklabs quests, allowing you to explore whatever topics you
+                wish to learn.</span>
+            <br />
 
+            <h2 class="headline">Getting help</h2>
+            <span>If you need any help with completing the labs or have any questions about the content,
+                feel free to ask a Tech Lead in our Discord
+                server. Our Tech Leads have gone through the content and can provide more extensive information as
+                requested.</span>
+            <br />
+
+            <span>Take the opportunity to discuss these topics with other members in the club. Get to know them, ask
+                questions, and provide help. This is a great way to find potential team members for the Solution
+                Challenge. Make sure to guide members to the correct solution rather than giving them the answer.</span>
+
+            <br />
+
+            <span><br />To continue working on the labs and other quests, you may click the button below. You should NOT
+                need to pay for access to any labs.</span>
+            <br /><br />
+            <a href="https://google.Qwiklabs.com/quests/23" class="btn">Continue to Qwiklabs</a>
         </div>
         <!-- <div class="img-wrapper">
             <div class="gcp-logo"></div>
@@ -173,9 +203,8 @@
     <div class="home-page-circle-3"></div>
     <div class="home-page-circle-4"></div>
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script id="navS" src="/resources/nav.js?page=404"></script>
+    <script id="navS" src="/resources/nav.js?page=csj1"></script>
     <script src="/resources/scripts.js"></script>
-    <script src="/resources/404.js"></script>
 </body>
 
 </html>

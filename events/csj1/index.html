@@ -18,13 +18,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="/resources/styles/styles.css" rel="stylesheet">
     <link href="/resources/styles/pages/index.css" rel="stylesheet">
+    <link href="/resources/styles/pages/event.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="/resources/styles/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
     <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
-    <title>Cloud Study Jam #1 | FAU Developer Student Club</title>
+    <title>Study Jam 1 | FAU Developer Student Club</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
@@ -34,12 +35,12 @@
     <meta name="keywords" content="Google Developer Student Clubs, Florida Atlantic, FAU, Coding">
 </head>
 
-
 <body class="container full-height-grow">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GLBH2" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <header class="main-header">
         <span class="brand-logo">
             <a href="/" class="">
@@ -61,22 +62,8 @@
                             class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
                             onclick="mobileNav()">menu
                         </button>
-                        <!-- <a href="javascript:void(0);" id="mobile-trigger-link" class="icon" onclick="mobileNav()">
-                                                <i class="material-icons">
-                                                    menu
-                                                </i>
-                                            </a> -->
                     </li>
                 </ul>
-                <!-- <div class="mt">
-                    <ul>
-                        <span class="mobile-trigger">
-                            <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </span>
-                    </ul>
-                </div> -->
             </div>
         </nav>
 
@@ -115,54 +102,63 @@
 
         </nav>
     </div>
-    <section class="home-main-section">
-
-
-        <div class="call-to-action">
-            <h1 class="title"><span>Cloud Study Jam 1<span class="h-om">:</span> </span><span class="title-small">GCP
-                    Essentials</span></h1>
-            <!-- <img style="margin-top: 0; width: 40%" src="/resources/logo_gcp/logo_gcp_horizontal_rgb.png" /> -->
-            <span class="subtitle">We hope you enjoyed our very first Cloud Study Jam! Using Qwiklabs, our participants
-                got hands-on practice with the Google Cloud Platform (GCP) by creating virtual machines, working with
-                Kubernetes clusters, and configuring load balancers. Members tested their skills by completing a
-                challenge lab.</span>
-
-            <h2 class="headline">Didn't make it?</h2>
-            <span>If you didn't make it to this first Study Jam, that's alright. We have many more exciting events
-                planned for the future. Make sure to fill out the contact form and join our Discord so you can
-                recieve updates and communicate with other members.</span>
-            <br />
-
-            <h2 class="headline">What's next?</h2>
-            <span>After starting the first lab, you should have received 30 days to complete the rest of the quest.
-                Upon completing the rest of the GCP Essentials quest, you will recieve an
-                additional 30 days of unlimited access to Qwiklabs quests, allowing you to explore whatever topics you
-                wish to learn.</span>
-            <br />
-
-            <h2 class="headline">Getting help</h2>
-            <span>If you need any help with completing the labs or have any questions about the content,
-                feel free to ask a Tech Lead in our Discord
-                server. Our Tech Leads have gone through the content and can provide more extensive information as
-                requested.</span>
-            <br />
-
-            <span>Take the opportunity to discuss these topics with other members in the club. Get to know them, ask
+    <section class="event_description">
+        <div id="csj3" class="event">
+            <div onmousedown="this.classList.add('clicked');" onmouseup="this.classList.remove('clicked');"
+                class="event-badge">
+                <a>
+                    <img class="normal" alt="gcp essentials badge" src="/resources/events/gcp-essentials-badge.png"
+                        target="_blank">
+                </a>
+            </div>
+            <!-- <br />
+            <iframe class="youtube_embed" width="720" height="405" src="https://www.youtube.com/embed/tpj3rK4KmRA"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> -->
+            <h3>GCP Essentials</h3>
+            <strong class="event-type">Study Jam 1</strong>
+            <span class="event-date">February 8th, 2020</span>
+            <p>
+                <span class="section_title">Event Information</span>
+                Google Cloud Essentials is all about learning the fundamental skills necesary when using the
+                GCP. Participants got hands-on practice with the Google Cloud Platform by creating virtual machines,
+                working with Kubernetes clusters, and configuring load balancers. Attendees then tested their skills at
+                the end by completing a challenge lab.
+            </p>
+            <p>
+                <span class="section_title">Study Jams</span>
+                Study Jams are group learning programs designed to give students practical experience in Google Cloud
+                technologies. Students come together to build their skills through interactive lessons and hands-on
+                labs.
+                <br /><br />
+                Upon completing a Study Jam quest, attendees earn a cool badge to show off their skills, and of course,
+                it can be added to their LinkedIn profiles. Students also gain full access to Qwiklabs for up to two
+                months, allowing them to explore the GCP and other Cloud technologies further until the next meetup!
+            </p>
+            <p>
+                <span class="section_title">Need help?</span>
+                Our tech leads are here to help! They can help guide you through labs, answer any questions about the
+                content, and provide a more comprehensive overview of the content. Reach out to them in the <a
+                    href="/go/discord">Discord
+                    server</a>.
+                <br /><br />
+                Take the opportunity to discuss these topics with other members in the club. Get to know them, ask
                 questions, and provide help. This is a great way to find potential team members for the Solution
-                Challenge. Make sure to guide members to the correct solution rather than giving them the answer.</span>
-
-            <br />
-
-            <span><br />To continue working on the labs and other quests, you may click the button below. You should NOT
-                need to pay for access to any labs.</span>
-            <br /><br />
-            <a href="https://google.Qwiklabs.com/quests/23" class="btn">Continue to Qwiklabs</a>
+                Challenge. Make sure to guide members to the correct solution rather than giving them the answer.
+            </p>
+            <!-- <div class="event-buttons">
+                <a href="/register/studyjam3" class="event-rsvp btn">RSVP</a>
+                <a href="/events/csj3" class="event-details btn btn-secondary">More Details</a>
+            </div> -->
         </div>
-        <!-- <div class="img-wrapper">
-            <div class="gcp-logo"></div>
-        </div> -->
+
+
+
+
+
 
     </section>
+
     <footer>
         <div class="footer-main-div">
 
@@ -172,7 +168,7 @@
                     <li>
                         <a href="https://www.instagram.com/dscfau/" target="blank"> <i class="fab fa-instagram"></i></a>
                     </li>
-                    <li><a href="https://discord.gg/39qJ3sE" target="blabk"> <i class="fab fa-discord"></i></a></li>
+                    <li><a href="https://discord.gg/39qJ3sE" target="blank"> <i class="fab fa-discord"></i></a></li>
                     <li>
                         <a href="https://twitter.com/dscfau" target="blank"><i class="fab fa-twitter-square"></i></a>
                     </li>
@@ -202,6 +198,7 @@
     <div class="home-page-circle-2"></div>
     <div class="home-page-circle-3"></div>
     <div class="home-page-circle-4"></div>
+
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script id="navS" src="/resources/nav.js?page=csj1"></script>
     <script src="/resources/scripts.js"></script>

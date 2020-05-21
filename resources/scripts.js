@@ -53,24 +53,27 @@ document.getElementById('mn-overlay').addEventListener('click', e => {
 document.addEventListener('DOMContentLoaded', function (e) {
     var navList = document.getElementById('nav');
     var items = navList.getElementsByTagName('li');
-    for (var i = 0; i < items.length; i++) {
-        var el = items[i];
-        if (el.classList.contains('itm')) {
-            var oldLi = el.cloneNode(true);
+    Object.keys(navItems).forEach(el => {
+        if (navItems[el].type != "group") {
             var sampleLi = document.querySelector('#mn-sample').cloneNode(true);
-            if (oldLi.classList.contains("active")) {
-                sampleLi.classList.add('mdc-list-item--activated');
-            }
-            var href = oldLi.childNodes[0].getAttribute('href');
-            var menuName = oldLi.getElementsByTagName('a')[0].innerHTML;
             sampleLi.removeAttribute('id');
-            sampleLi.setAttribute('href', href);
+            sampleLi.setAttribute('href', navItems[el].url);
             sampleLi.style.display = "";
-            sampleLi.getElementsByTagName('span')[0].innerHTML = menuName;
+            if (navItems[el].active == true) sampleLi.classList.add('mdc-list-item--activated');
+            if (navItems[el].parent != undefined) {
+                sampleLi.classList.add("mn-sub-el");
+
+            }
+            if (navItems[el].group != undefined) {
+                sampleLi.getElementsByTagName('span')[0].innerHTML = `[${navItems[navItems[el].group].abbr}] ${navItems[el].name}`
+            } else {
+                sampleLi.getElementsByTagName('span')[0].innerHTML = navItems[el].name;
+            }
+
             var iconButtonRipple = new mdc.ripple.MDCRipple(sampleLi);
             document.getElementById('new-mn-nav').appendChild(sampleLi);
         }
-    }
+    });
     setTimeout(() => {
         document.querySelector('#mobile-trigger-link').style = ""
     }, 250);
@@ -82,6 +85,9 @@ const list = mdc.list.MDCList.attachTo(document.querySelector('.mdc-list'))
 list.wrapFocus = true;
 
 const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'))
+const mdc_menu = new mdc.menu.MDCMenu(document.querySelector('.mdc-menu'));
+// mdc_menu.open = true;
+var isStillOpen = false;
 
 drawer.foundation_.handleScrimClick = function () {
     mobileNav();
@@ -125,3 +131,7 @@ const iconButtonRipple = new mdc.ripple.MDCRipple(document.querySelector('#mobil
 iconButtonRipple.unbounded = true;
 const iconButtonRipple2 = new mdc.ripple.MDCRipple(document.querySelector('#mobile-trigger-link-mn'));
 iconButtonRipple2.unbounded = true;
+
+document.querySelector(".itm_dropdown2").querySelectorAll(".mdc-ripple-surface").forEach(el => {
+    new mdc.ripple.MDCRipple(el);
+})

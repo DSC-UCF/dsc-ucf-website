@@ -1,0 +1,243 @@
+.event-main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 100px;
+}
+
+.event-main-section .event-image {
+    background-image: url(/images/events.png);
+    flex-grow: 1;
+    max-height: 500px;;
+    min-width: 725px;;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.event-main-section .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+}
+
+.icon-section {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .75rem;
+    width: 170px;
+    height: 180px;
+    background-color: #202027;
+    
+}
+.icon:not("#mobile-trigger-link") {
+    margin: .5rem;
+    margin-bottom: 2rem;
+}
+
+.icon img {
+    width: 100px;
+}
+
+@media (max-width: 900px) {
+    .discover-main-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .discover-main-section .team-image {
+        display: none;
+    }
+    .event-image {
+        display: none;
+    }
+}
+/* Temporary: */
+.event-main-section {
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.discover-main-section .team-image {
+    display: none;
+}
+.event-image {
+    display: none;
+}
+/* End of temporary */
+
+
+/*TEAM INFO*/
+/*LINE IN THE MIDDLE*/
+
+
+/*codepen by loan sameli*/
+.event_description {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+}
+
+
+.event {
+    width: 700px;
+    padding-left: 230px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    min-height: 200px;
+    margin: auto;
+    position: relative;
+    align-content: center;
+
+}
+
+.event-badge {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 0 0 100px 100px; */
+    overflow: hidden;
+    transform: rotate(0deg);
+    /* To force its own layer */
+    position: absolute;
+    left: 0;
+    /* border-radius: 50%; */
+    width: 200px;
+    transition: 500ms; 
+}
+
+
+.event-badge:not(.no-br), .event-badge:not(.no-br) img {
+    border-radius: 50%;
+}
+.event-badge img{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 500ms;
+}
+
+/*codepen by loan sameli end*/
+.event h3 {
+    margin: 0;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.event p {
+    font-size: 1.1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+strong.event-type {
+    color: #929292;
+    margin: -3px 0 5px 0;
+    display: block;
+    font-size: 1.0em;
+}
+.event-date {
+    color: #929292;
+    margin: -3px 0 5px 0;
+    display: block;
+    font-size: .9em;
+}
+
+/* .event-badge  {
+    
+} */
+/* 
+#flutter-image {
+    height: 248px;
+    width: 200px;
+} */
+
+/* .event-badge-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+} */
+.event-badge {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.event-badge:hover:not(.clicked), .event-badge:focus:not(.clicked), .event-badge:active:not(.clicked) {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.event-buttons .btn, .event-buttons {
+    transition: 500ms;
+}
+.event, .event-badge-transition, .event-main-section, .event-description {
+    transition: 500ms;
+}
+.event-badge-transition, .event-badge img {
+    transition: 300ms;
+}
+
+
+
+
+/* @media (max-width: 750px) { */
+.event {
+    width: unset;
+    padding-left: unset;
+}
+
+.event-badge {
+    display: block;
+    position: unset;
+    margin-bottom: 20px;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin: auto;
+}
+.event-main-section {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.event_description {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.event-badge {
+    width: 150px;
+    height: 150px;
+}
+.event-badge a:hover {
+    cursor: pointer;
+}
+.event-badge img {
+    width: 150px
+}
+.event-buttons .btn {
+    display: block;
+    margin-bottom: 10px;
+}
+.event-buttons {
+    margin: auto;
+    text-align: center;
+}
+.event-type, .event-date, .event h3 {
+    text-align: center;
+}
+
+/* } */

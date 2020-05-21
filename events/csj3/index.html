@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Data Layer -->
-    <script>dataLayer = [];</script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -12,8 +10,7 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');
-    </script>
+        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -21,28 +18,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="/resources/styles/styles.css" rel="stylesheet">
     <link href="/resources/styles/pages/index.css" rel="stylesheet">
+    <link href="/resources/styles/pages/event.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="/resources/styles/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
     <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
-    <title>Loading... | FAU Developer Student Clubs</title>
+    <title>Study Jam 3 | FAU Developer Student Club</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
 
-    <meta name="description" content="Bridging the gap between theory and practice.">
+    <meta name="description"
+        content="In this CSJ, students got to practice using GCP's IAM to manage permissions, used VPCs to protect resources, and learned how to secure applications.">
     <meta name="keywords" content="Google Developer Student Clubs, Florida Atlantic, FAU, Coding">
 </head>
-
 
 <body class="container full-height-grow">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GLBH2" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <header class="main-header">
         <span class="brand-logo">
             <a href="/" class="">
@@ -79,6 +78,7 @@
                 <a href="/">
                     <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
                 </a>
+                <!-- <img id="mn-logo" src="/images/logo.png" /> -->
             </div>
         </div>
         <div class="mdc-drawer__content">
@@ -92,6 +92,7 @@
             </nav>
         </div>
     </aside>
+    <div class="mdc-drawer-scrim"></div>
     <div class="mn">
         <div id="mn-overlay" class="hidden"></div>
         <nav id="mobile-nav" class="mobile-nav hidden">
@@ -102,37 +103,69 @@
 
         </nav>
     </div>
-    <section class="home-main-section">
-
-
-        <div class="call-to-action">
-            <h1 id="not-found-title" class="title">Loading...</h1>
-            <!-- <img style="margin-top: 0; width: 40%" src="/resources/logo_gcp/logo_gcp_horizontal_rgb.png" /> -->
-            <span id="not-found-message" class="subtitle"></span>
-
-            <div id="linProg" role="progressbar" class="mdc-linear-progress mdc-linear-progress--indeterminate">
-
-                <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
-                    <span class="mdc-linear-progress__bar-inner"></span>
-                </div>
-                <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
-                    <span class="mdc-linear-progress__bar-inner"></span>
-                </div>
+    <section class="event_description">
+        <div id="csj3" class="event">
+            <div onmousedown="this.classList.add('clicked');" onmouseup="this.classList.remove('clicked');"
+                class="event-badge">
+                <a>
+                    <img class="normal" alt="security and identity fundamentals badge"
+                        src="/resources/events/security-iden-fund.png" target="_blank">
+                </a>
             </div>
-            <div id="moved-prog-br">
-                <br />
-            </div>
-            <div class="btn-action">
-                <a id="not-found-moved" style="display:none" class="btn">Go to New Location</a>
-                <a id="not-found-home-btn" href="/" class="btn">Home Page</a>
-            </div>
-
+            <h3>Security and Identity Fundamentals</h3>
+            <strong class="event-type">Study Jam 3</strong>
+            <span class="event-date">May 15th, 2020</span>
+            <br />
+            <iframe class="youtube_embed" width="720" height="405" src="https://www.youtube.com/embed/tpj3rK4KmRA"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>
+                <span class="section_title">Event Information</span>
+                Security is an underlying feature of the Google Cloud Platform. Understanding how to secure applications
+                and manage users is an essential part of working with the Cloud. In this Study Jam, students will get
+                hands-on practice with GCP's Identity and Access Management service (IAM), which is the go-to for
+                managing user and virtual machine accounts. Students will learn about various tools to help them secure
+                their applications, and will explore using Virtual Private Clouds to further protect and connect
+                resources.
+                <br /><br />
+                For students new to the Google Cloud Platform, we will also be introducing basic GCP concepts, including
+                using Compute Engine, Kubernetes Engine, and Load Balancers, and will get the chance to test their
+                skills at the end with a challenge lab.
+            </p>
+            <p>
+                <span class="section_title">Study Jams</span>
+                Study Jams are group learning programs designed to give students practical experience in Google Cloud
+                technologies. Students come together to build their skills through interactive lessons and hands-on
+                labs.
+                <br /><br />
+                Upon completing a Study Jam quest, attendees earn a cool badge to show off their skills, and of course,
+                it can be added to their LinkedIn profiles. Students also gain full access to Qwiklabs for up to two
+                months, allowing them to explore the GCP and other Cloud technologies further until the next meetup!
+            </p>
+            <p>
+                <span class="section_title">Need help?</span>
+                Our tech leads are here to help! They can help guide you through labs, answer any questions about the
+                content, and provide a more comprehensive overview of the content. Reach out to them in the <a
+                    href="/go/discord">Discord
+                    server</a>.
+                <br /><br />
+                Take the opportunity to discuss these topics with other members in the club. Get to know them, ask
+                questions, and provide help. This is a great way to find potential team members for the Solution
+                Challenge. Make sure to guide members to the correct solution rather than giving them the answer.
+            </p>
+            <!-- <div class="event-buttons">
+                <a href="/register/studyjam3" class="event-rsvp btn">RSVP</a>
+                <a href="/events/csj3" class="event-details btn btn-secondary">More Details</a>
+            </div> -->
         </div>
-        <!-- <div class="img-wrapper">
-            <div class="gcp-logo"></div>
-        </div> -->
+
+
+
+
+
 
     </section>
+
     <footer>
         <div class="footer-main-div">
 
@@ -142,7 +175,7 @@
                     <li>
                         <a href="https://www.instagram.com/dscfau/" target="blank"> <i class="fab fa-instagram"></i></a>
                     </li>
-                    <li><a href="https://discord.gg/39qJ3sE" target="blabk"> <i class="fab fa-discord"></i></a></li>
+                    <li><a href="https://discord.gg/39qJ3sE" target="blank"> <i class="fab fa-discord"></i></a></li>
                     <li>
                         <a href="https://twitter.com/dscfau" target="blank"><i class="fab fa-twitter-square"></i></a>
                     </li>
@@ -172,10 +205,10 @@
     <div class="home-page-circle-2"></div>
     <div class="home-page-circle-3"></div>
     <div class="home-page-circle-4"></div>
+
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script id="navS" src="/resources/nav.js?page=404"></script>
+    <script id="navS" src="/resources/nav.js?page=csj3"></script>
     <script src="/resources/scripts.js"></script>
-    <script src="/resources/404.js"></script>
 </body>
 
 </html>

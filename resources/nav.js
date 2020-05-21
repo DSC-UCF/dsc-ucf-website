@@ -17,9 +17,13 @@ if (navScriptTag != null) {
 var navItems = {
     'home': { "name": "Home", "url": "/" },
     'about': { "name": "About Us", "url": "/about" },
-    'events': { "name": "Events", "url": "/events" },
-    // 'csj1': { "name": "Study Jam 1", "url": "/events/csj1" },
-    // 'csj3': { "name": "Study Jam 3", "url": "/events/csj3" }
+    'events': { "name": "Events", "url": "/events", type: "dropdown" },
+    'studyjam': { "name": "Study Jams", "parent": "events", "type": "group", "abbr": "CSJ" },
+    'csj1': { "name": "GCP Essentials", "url": "/events/csj1", "parent": "events", "group": "studyjam", "icon": "/resources/events/gcp-essentials-badge.png" },
+    'csj2': { "name": "Google Developer Essentials", "url": "/events/csj2", "parent": "events", "group": "studyjam", "icon": "/resources/events/google-dev-essentials.png" },
+    'csj3': { "name": "Security and Identity Fundamentals", "url": "/events/csj3", "parent": "events", "group": "studyjam", "icon": "/resources/events/security-iden-fund.png" },
+    // 'workshop': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
+    // 'csj4': { "name": "How to restart a computer", "url": "/events/csj3", "parent": "events", "group": "workshop" },
 }
 
 
@@ -27,18 +31,119 @@ try {
     navItems[currentPage].active = true;
 } catch (error) { }
 
-
+var groups = {
+    'events': {
+        'count': 0
+    }
+};
 Object.keys(navItems).forEach(el => {
     var navItm = navItems[el];
     var newLi = document.createElement("li");
     newLi.classList.add("itm");
+    newLi.setAttribute("id", "nav_itm_" + el);
     if (navItm.active) newLi.classList.add("active");
     var newA = document.createElement("a");
     newA.setAttribute("href", navItm.url);
     newA.innerHTML = navItm.name;
+
+    if (navItm.type == "dropdown") {
+        var menu = document.createElement("div");
+        menu.classList.add("mdc-menu", "mdc-menu-surface");
+
+
+        var dropdown = document.createElement("ul");
+        dropdown.classList.add("nav_dropdown2");
+        dropdown.classList.add("mdc-list")
+        dropdown.setAttribute("role", "menu")
+        dropdown.setAttribute("aria-hidden", "true")
+        dropdown.setAttribute("aria-orientation", "vertical")
+        dropdown.setAttribute("tabindex", "-1");
+
+        menu.appendChild(dropdown);
+
+        newLi.appendChild(menu);
+        newLi.classList.add("itm_dropdown2");
+        newLi.classList.add("mdc-menu-surface--anchor");
+        newLi.setAttribute("onmouseover", "mdc_menu.open = true; isStillOpen = true");
+        newLi.setAttribute("onmouseout", "isStillOpen = false; setTimeout(() => {if (isStillOpen == false) mdc_menu.open = false}, 100);");
+    }
     newLi.appendChild(newA);
 
-    document.querySelector("#nav").appendChild(newLi);
+
+    if (navItm.parent != undefined) {
+        try {
+            var newLi = document.createElement("li");
+            newLi.setAttribute("id", "nav_itm_" + el);
+            if (navItm.type == "group") {
+                if (groups[navItm.parent][el] == undefined) {
+                    var parent = document.querySelector("#nav_itm_" + navItm.parent)
+                    groups[navItm.parent][el] = true;
+                    if (groups[navItm.parent].count > 0) {
+                        var sepEl = document.createElement("li");
+                        sepEl.classList.add("mdc-list-divider")
+                        sepEl.setAttribute("role", "separator")
+                        parent.querySelector(".nav_dropdown2").appendChild(sepEl);
+                    }
+                    var headerEl = document.createElement("h3");
+                    headerEl.classList.add("mdc-list-group__subheader")
+                    headerEl.innerHTML = navItm.name;
+                    parent.querySelector(".nav_dropdown2").appendChild(headerEl);
+
+
+                    groups[navItm.parent].count = groups[navItm.parent].count + 1;
+                }
+                newLi.innerHTML = `<ul class="mdc-menu__selection-group" id="sel_group_${el}"></ul>`;
+
+            } else {
+                if (navItm.active) newLi.classList.add("active");
+
+
+                newLi.classList.add("mdc-ripple-surface");
+                newLi.setAttribute("onclick", `window.location.href = '${navItm.url}'`)
+
+
+                // newLi.classList.remove("itm")
+                // newLi.classList.add("dd_itm")
+                newLi.classList.add("mdc-list-item");
+                newLi.setAttribute("role", "menuitem");
+                var innerText = "";
+                if (navItm.icon != undefined) {
+                    innerText = innerText + `<img class="mdc-list-item__graphic"src="${navItm.icon}">`
+                    newLi.classList.add("hasIcon");
+                    // innerText = innerText + `<span class="mdc-list-item__graphic"><img src="${navItm.icon}"></span>`
+                }
+                newLi.innerHTML = innerText + `<span class="mdc-list-item__text">${navItm.name}</span>`;
+
+
+            }
+
+            var parent = document.querySelector("#nav_itm_" + navItm.parent)
+
+            if (navItm.active == true) {
+                parent.classList.add("active");
+                // newLi.classList.add("mdc-ripple-upgraded--background-focused")
+                newLi.classList.add("active")
+                newLi.classList.add("mdc-list-item--activated")
+            }
+
+            if (navItm.group != undefined) {
+
+
+                parent.querySelector("#sel_group_" + navItm.group).appendChild(newLi);
+            } else {
+                parent.querySelector(".nav_dropdown2").appendChild(newLi);
+            }
+
+        } catch (err) {
+            console.log(err);
+            // document.querySelector("#nav").appendChild(newLi);
+        }
+    } else {
+        document.querySelector("#nav").appendChild(newLi);
+    }
+
+
+
 
 });
 {/* <li class="itm active"><a href="/">Home</a></li> */ }
