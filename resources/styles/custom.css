@@ -39,6 +39,42 @@
     padding-left: 0px;
 }
 
+p a:not(.btn) {
+    text-decoration: none
+}
+p a:not(.btn):hover {
+    text-decoration: underline;
+}
+
+.feedback-section .mdc-menu {
+    bottom: 50px !important;
+}
+.feedback-section .material-icons {
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 17px;
+    /* border: 1px solid black;
+    border-radius: 20%;
+    background-color: gray;
+    color: white; */
+    
+}
+.feedback-section .material-icons:hover {
+    background-color: rgba(32,33,36,0.039);
+    
+    
+}
+
+.feedback-section {
+    bottom: 20px;
+    left: 20px;
+    position: fixed;
+
+    
+}
 
 
 

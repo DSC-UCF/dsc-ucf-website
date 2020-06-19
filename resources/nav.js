@@ -19,9 +19,12 @@ var navItems = {
     'about': { "name": "About Us", "url": "/about" },
     'events': { "name": "Events", "url": "/events", type: "dropdown" },
     'studyjam': { "name": "Study Jams", "parent": "events", "type": "group", "abbr": "CSJ" },
+    'workshops': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
     'csj1': { "name": "GCP Essentials", "url": "/events/csj1", "parent": "events", "group": "studyjam", "icon": "/resources/events/gcp-essentials-badge.png" },
     'csj2': { "name": "Google Developer Essentials", "url": "/events/csj2", "parent": "events", "group": "studyjam", "icon": "/resources/events/google-dev-essentials.png" },
     'csj3': { "name": "Security and Identity Fundamentals", "url": "/events/csj3", "parent": "events", "group": "studyjam", "icon": "/resources/events/security-iden-fund.png" },
+    'csj4': { "name": "Introduction to ML: Language Processing", "url": "/events/csj4", "parent": "events", "group": "studyjam", "icon": "/resources/events/ml-lang-processing.png" },
+    'flutter1': { "name": "Flutter Me Some Dart", "url": "/events/flutter-me-some-dart", "parent": "events", "group": "workshops", "icon": "/resources/events/flutter-icon.png" },
     // 'workshop': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
     // 'csj4': { "name": "How to restart a computer", "url": "/events/csj3", "parent": "events", "group": "workshop" },
 }
@@ -33,6 +36,9 @@ try {
 
 var groups = {
     'events': {
+        'count': 0
+    },
+    'workshops': {
         'count': 0
     }
 };
@@ -49,6 +55,7 @@ Object.keys(navItems).forEach(el => {
     if (navItm.type == "dropdown") {
         var menu = document.createElement("div");
         menu.classList.add("mdc-menu", "mdc-menu-surface");
+        menu.setAttribute("id", "nav-mdc-menu")
 
 
         var dropdown = document.createElement("ul");
