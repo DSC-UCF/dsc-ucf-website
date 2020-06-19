@@ -20,6 +20,7 @@ const movedPages = {
     '/join/flutter-1': 'https://forms.gle/19AXia6c8QEe9L1a9',
     '/go/owlcentral': 'https://fau.campuslabs.com/engage/organization/developerstudentclub',
     '/go/csj4-webex': 'https://fau.webex.com/fau/onstage/g.php?MTID=e79e557fe1bf2df7d9180fa2d6a889889',
+    '/events/flutter1': '/events/flutter-me-some-dart',
 
 }
 
@@ -48,7 +49,7 @@ if (movedPages[testPath] != undefined) {
     document.querySelector("#moved-prog-br").style.display = "";
     document.title = "Redirecting... | FAU Developer Student Clubs";
     document.querySelector("#not-found-title").innerHTML = "Redirecting...";
-    document.querySelector("#not-found-message").innerHTML = "The page you requested has been moved. Redirecting...";
+    document.querySelector("#not-found-message").innerHTML = "Redirecting...";
     document.querySelector("#not-found-home-btn").classList.add("btn-secondary");
     document.querySelector("#not-found-moved").setAttribute('href', newLink);
     document.querySelector("#not-found-moved").style.display = "";
