@@ -21,6 +21,8 @@ const movedPages = {
     '/go/owlcentral': 'https://fau.campuslabs.com/engage/organization/developerstudentclub',
     '/go/csj4-webex': 'https://fau.webex.com/fau/onstage/g.php?MTID=e79e557fe1bf2df7d9180fa2d6a889889',
     '/events/flutter1': '/events/flutter-me-some-dart',
+    '/ml-1': '/events/csj4',
+    'flutter-1': '/events/flutter-me-some-dart',
 
 }
 
