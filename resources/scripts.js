@@ -84,10 +84,17 @@ document.addEventListener('DOMContentLoaded', function (e) {
 const list = mdc.list.MDCList.attachTo(document.querySelector('.mdc-list'))
 list.wrapFocus = true;
 
+// document.querySelectorAll(".mdc-drawer").forEach(el => {
+//     mdc.drawer.MDCDrawer.attachTo(el)
+// })
 const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'))
-const mdc_menu = new mdc.menu.MDCMenu(document.querySelector('.mdc-menu'));
+const mdc_menu = new mdc.menu.MDCMenu(document.querySelector('#nav-mdc-menu'));
 // mdc_menu.open = true;
 var isStillOpen = false;
+
+
+// const feedbackMenu = new mdc.menu.MDCMenu(document.querySelector('#feedback-menu'));
+// feedbackMenu.open = true;
 
 drawer.foundation_.handleScrimClick = function () {
     mobileNav();
