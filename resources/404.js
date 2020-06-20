@@ -23,6 +23,7 @@ const movedPages = {
     '/events/flutter1': '/events/flutter-me-some-dart',
     '/ml-1': '/events/csj4',
     '/flutter-1': '/events/flutter-me-some-dart',
+    '/go/studyjam4': 'https://google.qwiklabs.com/quests/82?event=Your&utm_source=qwiklabs&utm_medium=lp&utm_campaign=studyjam',
 
 }
 
