@@ -15,16 +15,16 @@ if (navScriptTag != null) {
     currentPage = scriptURL.searchParams.get("page");
 }
 var navItems = {
-    'home': { "name": "Home", "url": "/" },
-    'about': { "name": "About Us", "url": "/about" },
-    'events': { "name": "Events", "url": "/events", type: "dropdown" },
+    'home': { "name": "Home", "url": "https://dscfau.com/" },
+    'about': { "name": "About Us", "url": "https://dscfau.com/about" },
+    'events': { "name": "Events", "url": "https://dscfau.com/events", type: "dropdown" },
     'studyjam': { "name": "Study Jams", "parent": "events", "type": "group", "abbr": "CSJ" },
     'workshops': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
-    'csj1': { "name": "GCP Essentials", "url": "/events/csj1", "parent": "events", "group": "studyjam", "icon": "/resources/events/gcp-essentials-badge.png" },
-    'csj2': { "name": "Google Developer Essentials", "url": "/events/csj2", "parent": "events", "group": "studyjam", "icon": "/resources/events/google-dev-essentials.png" },
-    'csj3': { "name": "Security and Identity Fundamentals", "url": "/events/csj3", "parent": "events", "group": "studyjam", "icon": "/resources/events/security-iden-fund.png" },
-    'csj4': { "name": "Introduction to ML: Language Processing", "url": "/events/csj4", "parent": "events", "group": "studyjam", "icon": "/resources/events/ml-lang-processing.png" },
-    'flutter1': { "name": "Flutter Me Some Dart", "url": "/events/flutter-me-some-dart", "parent": "events", "group": "workshops", "icon": "/resources/events/flutter-icon.png" },
+    'csj1': { "name": "GCP Essentials", "url": "https://dscfau.com/events/csj1", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/gcp-essentials-badge.png" },
+    'csj2': { "name": "Google Developer Essentials", "url": "https://dscfau.com/events/csj2", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/google-dev-essentials.png" },
+    'csj3': { "name": "Security and Identity Fundamentals", "url": "https://dscfau.com/events/csj3", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/security-iden-fund.png" },
+    'csj4': { "name": "Introduction to ML: Language Processing", "url": "https://dscfau.com/events/csj4", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/ml-lang-processing.png" },
+    'flutter1': { "name": "Flutter Me Some Dart", "url": "https://dscfau.com/events/flutter-me-some-dart", "parent": "events", "group": "workshops", "icon": "https://dscfau.com/resources/events/flutter-icon.png" },
     // 'workshop': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
     // 'csj4': { "name": "How to restart a computer", "url": "/events/csj3", "parent": "events", "group": "workshop" },
 }
