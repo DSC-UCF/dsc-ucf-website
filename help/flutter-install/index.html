@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/resources/styles/styles.css" rel="stylesheet">
+    <link href="/resources/styles/pages/index.css" rel="stylesheet">
+    <link href="/resources/styles/pages/events.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="/resources/styles/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
+    <title>Flutter Install Guide | FAU Developer Student Club</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+
+    <meta name="description" content="Bridging the gap between theory and practice.">
+    <meta name="keywords" content="Google Developer Student Clubs, Florida Atlantic, FAU, Coding">
+</head>
+
+<body class="container full-height-grow">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GLBH2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="main-header">
+        <span class="brand-logo">
+            <a href="/" class="">
+                <img src="/images/logo.png">
+            </a>
+            <a href="/" class="brand-logo-name-a">
+                <div class="brand-logo-name">
+                    <div class="">Developer Student Clubs</div>
+                    <div class="brand-logo-school">Florida Atlantic University</div>
+                </div>
+            </a>
+        </span>
+        <nav class="main-nav">
+            <div class="navbar">
+                <ul id="nav" class="responsfive">
+                    <!-- Add items in nav.js -->
+                    <li class="mobile-trigger">
+                        <button id="mobile-trigger-link"
+                            class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+                            onclick="mobileNav()">menu
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <aside class="mdc-drawer mdc-drawer--modal mdc-drawer--dismissible">
+        <div class="mdc-drawer__header">
+            <button id="mobile-trigger-link-mn" class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+                onclick="mobileNav()">menu
+            </button>
+            <div class="mdc-drawer__title" id="mn-title">
+                <a href="/">
+                    <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
+                </a>
+                <!-- <img id="mn-logo" src="/images/logo.png" /> -->
+            </div>
+        </div>
+        <div class="mdc-drawer__content">
+
+            <nav class="mdc-list" id="new-mn-nav" dir="ltr">
+                <a style="display: none" id="mn-sample" class="mdc-list-item mdc-ripple-surface" href="#"
+                    aria-current="page">
+                    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i> -->
+                    <span class="mdc-list-item__text"></span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mn">
+        <div id="mn-overlay" class="hidden"></div>
+        <nav id="mobile-nav" class="mobile-nav hidden">
+
+            <ul id="m-nav-list">
+                <!-- DO NOT ADD ITEMS -->
+            </ul>
+
+        </nav>
+    </div>
+    <section class="event-main-section">
+        <div class="call-to-action">
+            <h1 class="title">Flutter Install Guide</h1>
+            <span class="subtitle">Provided by Jonathan Yataco</span>
+            If you're participating in our Flutter workshops, you will need to have
+            Flutter installed prior to the start of the event.
+            <br /><br />
+            We've put together some instructions to help get you started, but note that this information serves as a
+            supplement to the installation instructions found on the official Flutter website.
+            <br /><br />
+            For the full official instructions, navigate to <a
+                href="https://flutter.dev/docs/get-started/install">flutter.dev/docs/get-started</a>
+        </div>
+
+    </section>
+    <section id="introduction">
+        <h4 class="title" style="font-size: 2em">Introduction</h4>
+        <div>
+            <b>NOTE: </b>This document serves as a supplement to the installation instructions that are found
+            on the flutter website. Flutter is
+            available to install on all major operating systems and the official instructions for installing it on each
+            OS can be
+            found here:
+            <ul>
+                <li><a href="https://flutter.dev/docs/get-started/install/windows">Windows Official Installation
+                        Guide</a></li>
+                <li><a href="https://flutter.dev/docs/get-started/install/macos">MacOS Official Installation Guide</a>
+                </li>
+                <li><a href="https://flutter.dev/docs/get-started/install/linux">Linux Official Installation Guide</a>
+                </li>
+            </ul>
+            <br />
+            This document will only go over instructions for installing Flutter on Windows and Mac OS. Both documents
+            will only
+            cover setting up Flutter for use with emulators. For instructions on how to deploy a Flutter app to your
+            actual
+            iOS/Android device, please refer to the <b>official</b> installation guides. Again this document is a
+            supplementary reference
+            to the official guides.
+            <br /><br />
+            <ul>
+                <li><a class="windows_btn" href="#windows">Windows supplementary reference</a></li>
+                <li><a class="mac_btn" href="#macos">MacOS supplementary reference</a></li>
+            </ul>
+            <br />
+            After following the official instructions or the supplementary references, you can set up a text editor that
+            will be
+            used for flutter development. Instructions on how to set up a text editor/IDE can be found <a
+                href="https://flutter.dev/docs/get-started/editor?tab=androidstudio">here</a>. Both
+            Android Studio and
+            Visual Studio Code can be used for Flutter development and both have great Flutter/Dart plugins to support
+            your
+            development environment.
+
+            <br /><span id="questions"></span><br />
+            If you have any questions during installation, post your question on the <b>#tech-help</b> channel of our
+            official
+            Discord server
+            <a href="https://go.dscfau.com/discord">https://go.dscfau.com/discord</a>. Thanks 👨🏽‍💻
+        </div>
+    </section>
+    <section id="mdc-tabs">
+        <div class="mdc-tab-scroller">
+            <div class="mdc-tab-scroller">
+                <div class="mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-area--scroll"
+                    style="margin-bottom: 0px;">
+                    <div class="mdc-tab-scroller__scroll-content">
+                        <button id="windows_btn" class="windows_btn mdc-tab mdc-tab--active" role="tab"
+                            aria-selected="true" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__text-label">Windows</span>
+                            </span>
+                            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+                        <button id="mac_btn" class="mdc-tab mac_btn" role="tab" aria-selected="false" tabindex="0">
+                            <span class="mdc-tab__content">
+                                <span class="mdc-tab__text-label">MacOS</span>
+                            </span>
+                            <span class="mdc-tab-indicator">
+                                <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline">
+                                </span>
+                            </span>
+                            <span class="mdc-tab__ripple"></span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var w_btns = document.querySelectorAll(".windows_btn");
+        var m_btns = document.querySelectorAll(".mac_btn");
+
+        m_btns.forEach(el => {
+            el.addEventListener("click", e => {
+                e.preventDefault()
+                tabBar.activateTab(1)
+            })
+        })
+        w_btns.forEach(el => {
+            el.addEventListener("click", e => {
+                e.preventDefault()
+                tabBar.activateTab(0)
+            })
+        })
+
+
+    </script>
+    <br />
+    <section id="windows">
+        <h3 style="font-size: 2em" class="title">Windows Guide</h3>
+        <section id="windows-requirements">
+            <span class="subtitle">Part 1 - Requirements</span>
+            <ul>
+                <li>Operating Systems: Windows 7 SP1 or later (64-bit)</li>
+                <li>Disk Space: 400 MB (does not include disk space for IDE/tools).</li>
+                <li><a
+                        href="https://docs.microsoft.com/en-us/powershell/scripting/install/installing-windows-powershell">Windows
+                        PowerShell 5.0</a> or newer (this is pre-installed with Windows 10)</li>
+                <li><a href="https://git-scm.com/download/win">Git for Windows</a> 2.x, with the Use Git from the
+                    Windows Command Prompt option.</li>
+            </ul>
+            <br />
+            Make sure you meet these requirements before continuing. Follow the embedded links to install Windows
+            PowerShell 5.X and
+            Git for Windows 2.X. Windows PowerShell 5.x is already pre-installed with Windows 10, but it is especially
+            important to
+            download Git since that does not come pre-installed with windows. For example, if I try to run the git
+            command on a
+            fresh install of Windows 10 I get the following error.
+            <div class="step-img" data-name="git-not-found.png"></div>
+            <br />
+            Git offers a 32-bit version and a 64-bit version on the download page. It is important to download the
+            version that
+            corresponds to your operating system. To find out if the version of windows that you are running is 32 or 64
+            bit, do the
+            following:
+            <div class="step-img" data-name="img2.png"></div>
+            <br />
+            You will see this information and the <b>System Type</b> will either tell you if you are running 32 or 64
+            bit.
+            <div class="step-img" data-name="img3.png"></div>
+            <br />
+            Once you have this information, download the appropriate version of git for Windows. The download will be an
+            .exe, and
+            when opened you will be prompted to set up git. The setup will ask you to configure git on your system but
+            the default
+            settings are fine for our purposes. Just keep clicking <b>next</b> during the setup. The following is an
+            example of what the
+            setup looks like:
+            <div class="step-img" data-name="img4.png"></div>
+            <br />
+
+        </section>
+        <section id="windows-flutter-install">
+            <span class="subtitle">Part 2 - Flutter Install/Setup</span>
+            <ol class="help-list">
+                <li>Download the following installation bundle to get the latest stable release of the Flutter SDK:
+                    <a
+                        href="https://storage.googleapis.com/flutter_infra/releases/stable/windows/flutter_windows_1.17.4-stable.zip">flutter_windows_1.17.4-stable.zip</a>
+                </li>
+                <li>Extract the zip file and place the contained <pth>flutter</pth> in the desired installation location
+                    for the
+                    Flutter SDK (for
+                    example, <pth>C:\src\flutter</pth>; do not install Flutter in a directory like <pth>C:\Program
+                        Files\</pth>
+                    that requires
+                    elevated
+                    privileges).
+                    <ol>
+                        <li>For example, I’m going to create a new folder in my C:\ drive called src. I will
+                            extract/place
+                            the Flutter SDK in here</li>
+                    </ol>
+                </li>
+                <li>
+                    Once extracted, we want to update our system path so that we can use flutter commands from anywhere
+                    in the windows
+                    console, rather than just from the directory where flutter is installed.
+                    <ol>
+                        <li>From the Start search bar, enter ‘env’ and select Edit environment variables for your
+                            account.
+                        </li>
+                        <li>Under User variables check if there is an entry called Path:
+                            <ol>
+                                <li>If the entry exists, append the full path to <pth>flutter\bin</pth> using <pth>;
+                                    </pth> as a separator from
+                                    existing values.
+                                </li>
+                                <li>If the entry doesn’t exist, create a new user variable named <pth>Path</pth> with
+                                    the full path
+                                    to <pth>flutter\bin</pth> as its value.
+                                </li>
+                                <li>In order to find out the full path name of <b>flutter\bin</b>, navigate to the
+                                    folder
+                                    <b>flutter</b> folder inside src. Locate the bin
+                                    directory and right click on the bin directory while holding down the <b>shift</b>
+                                    key.
+                                    <ol>
+                                        <li>You should be given the option to “copy as path”. Clicking this option will
+                                            copy the full system path to <b>flutter\bin</b> to
+                                            your system clipboard.
+                                        </li>
+                                        <li>You should see the “copy as path” option as shown on the right. Once
+                                            clicked, follow the instructions above to add to
+                                            path. Note that if the path is copied with quotation marks around it, remove
+                                            them before adding to the system path. To
+                                            confirm if this was successful, run flutter doctor and you should receive
+                                            output in windows prompt.
+                                            <div class="step-img" data-name="img5.png"></div>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <br />
+            Screenshot example of new path after editing:
+            <div class="step-img" data-name="img6.png"></div>
+            <div class="step-img" data-name="img7.png"></div>
+            <br />Example of output from running the flutter doctor command:
+            <div class="step-img" data-name="img8.png"></div>
+        </section>
+        <br />
+        <section id="windows-android-studio">
+            <span class="subtitle">Part 3 - Android Studio and Emulator Setup</span>
+            <br /><br />
+            <em>Note that you can use and develop flutter apps with other IDE’s or text editors such as visual studio
+                code. The official
+                installation instructions as well as this document will only cover setup using Android studio, since
+                Android studio is
+                needed to run an Android emulator whether or not you use the IDE for editing code.</em>
+            <br /><br />
+            <span style="font-size: 1.2em" class="subtitle">Setting up Android Studio</span>
+            <br />
+            <ol>
+                <li>Download and install <a href="https://developer.android.com/studio">Android Studio</a>.</li>
+                <li>Start Android Studio, and go through the 'Android Studio Setup Wizard'. This installs the latest
+                    Android SDK, Android
+                    SDK Command-line Tools, and Android SDK Build-Tools, which are required by Flutter when developing
+                    for Android. Choose
+                    the standard option during the Android Studio Setup Wizard. This will install everything that is
+                    needed.</li>
+            </ol>
+            <span style="font-size: 1.2em" class="subtitle">Setting up Android Emulator</span>
+            <br />
+            <ol>
+                <li>Enable <a href="https://developer.android.com/studio/run/emulator-acceleration">VM acceleration</a>
+                    on your machine. The section that explains how to enable VM acceleration will
+                    be farther down
+                    the page, and it will be titled <em>“Configuring VM acceleration”</em>. Note this has to be done on
+                    an actual
+                    machine, and cannot
+                    be enabled through a virtual machine running windows.</li>
+                <li>Launch Android Studio > Tools > Android > AVD Manager and selectCreate Virtual Device. (The
+                    Android submenu is only
+                    present when inside an Android project.)
+                </li>
+                <li>Choose a device definition and select Next.</li>
+                <li>Select one or more system images for the Android versions you want to emulate, and select Next.
+                    An <em>x86</em> or <em>x86_64</em>
+                    image is recommended.</li>
+                <li>Under Emulated Performance, select Hardware - GLES 2.0 to enable <a
+                        href="https://developer.android.com/studio/run/emulator-acceleration">hardware acceleration</a>.
+                </li>
+                <li>Verify the AVD configuration is correct, and select Finish.
+                    For details on the above steps, see <a
+                        href="https://developer.android.com/studio/run/managing-avds">Managing AVDs</a>.
+                </li>
+                <li>In Android Virtual Device Manager, click Run in the toolbar. The emulator starts up and displays
+                    the default canvas
+                    for your selected OS version and device.</li>
+            </ol>
+            <br />
+            Once this is configured, you have your windows environment setup to develop flutter apps 😃. <a
+                href="#questions">Questions?</a>
+        </section>
+    </section>
+    <section id="macos">
+
+        <h3 style="font-size: 2em" class="title">Mac Guide</h3>
+        <section id="mac-requirements">
+            <span class="subtitle">Part 1 - Requirements</span>
+            <br />
+            To install and run Flutter, your development environment must meet these minimum requirements:
+            <ul>
+                <li>Operating Systems: macOS (64-bit)</li>
+                <li>Disk Space: 2.8 GB (does not include disk space for IDE/tools).</li>
+                <li>Tools: Flutter depends on these command-line tools being available in your environment.
+                    <ul>
+                        <li>bash</li>
+                        <li>curl</li>
+                        <li>git 2.x</li>
+                        <li>mkdir</li>
+                        <li>rm</li>
+                        <li>unzip</li>
+                        <li>which</li>
+                        <li>zip</li>
+                    </ul>
+                </li>
+                <li>Note that if you are running a relatively recent version of MacOS, then all of the listed tools will
+                    automatically be installed on your machine. This document assumes that you know how to navigate the
+                    system using terminal, but if you have any trouble or don’t have any experience doing so then please
+                    ask questions in the Discord 🙂.
+                </li>
+            </ul>
+        </section>
+        <section id="mac-flutter-install">
+            <span class="subtitle">Part 2 - Flutter Install</span>
+            <ol class="help-list">
+                <li>Download the following installation bundle to get the latest stable release of the Flutter SDK:
+                    <a
+                        href="https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_1.17.4-stable.zip">flutter_macos_1.17.4-stable.zip</a>.
+                    You can also clone the flutter repo to your desired location on
+                    your machine by running
+                    the following command:
+                    <ol>
+                        <li>
+                            <code>git clone https://github.com/flutter/flutter.git</code>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Extract the file in the desired location. For example, you can create a development folder and unzip
+                    the zip file in
+                    there:
+                    <br />
+                    <div class="codeblock bash">
+                        <code>
+                            <span class="cd">cd</span> ~/development<br />
+                            unzip ~/Downloads/flutter_macos_1.17.4-stable.zip
+                        </code>
+                    </div>
+                </li>
+                <li>
+                    Add <code>flutter</code> to your path. You are going to want to add it to your system path so that
+                    you can run flutter commands
+                    from everywhere, so perform the following steps:
+                    <ol>
+                        <li>Determine the directory where you placed the Flutter SDK. You need this in Step 3. You can
+                            get the full path to this
+                            by cd’ing to the directory where Flutter is installed, and running the
+                            <strong><b><em>pwd</em></b></strong>
+                            command. The output will look like this:
+                            <div class="step-img" data-name="img9.png"></div>
+                        </li>
+                        <li>
+                            Open (or create) the <code><pth>rc</pth></code> file for your shell. Typing
+                            <code><pth>echo $SHELL</pth></code> in
+                            your Terminal
+                            tells you which shell you’re using.
+                            If you’re using Bash, edit <code><pth>$HOME/.bash_profile</pth></code> or
+                            <code><pth>$HOME/.bashrc</pth></code>. If you’re using Z shell,
+                            edit <code><pth>$HOME/.zshrc</pth></code>. If you’re
+                            using a different shell, the file path and filename will be different on your machine.
+                        </li>
+                        <li>
+                            Add the following line and change <code><pth>[PATH_TO_FLUTTER_GIT_DIRECTORY]</pth></code>
+                            to be the path where
+                            you cloned Flutter’s git repo
+                            or the path where you unzipped flutter:
+                            <ol>
+                                <li>
+                                    <div class="codeblock bash">
+                                        <code>
+                                            export PATH="$PATH:[PATH_TO_FLUTTER_GIT_DIRECTORY]/flutter/bin"
+                                        </code>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>Run <pth><code>source $HOME/.&lt;rc file&gt;</code></pth> to refresh the current window, or
+                            open a new terminal window to
+                            automatically source the
+                            file.</rc>
+                        <li>Verify that the <code><pth>flutter/bin</pth></code> directory is now in your PATH by
+                            running:
+                            <ol>
+                                <li>
+                                    <div class="codeblock bash"><code>echo $PATH</code></div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Verify that that the flutter command is available by running: <code>which flutter</code>
+                        </li>
+
+                    </ol>
+                </li>
+            </ol>
+        </section>
+        <section id="mac-xcode-setup">
+            <span class="subtitle">Part 3 - Xcode and Simulator Setup</span>
+            <br />
+            <em>Note that MacOS gives you the ability to run Android simulators as well as iOS simulators. This guide
+                only covers
+                setting up iOS simulators; refer to the official installation instructions for setting up Android
+                emulators for MacOS.
+                Setting up Xcode is necessary for running iOS simulators and for running Flutter apps on a physical iOS
+                device.</em>
+            <br /><br />
+            <span class="subtitle" style="font-size: 1.1em">Setting Up Xcode</span>
+            <ol class="help-list">
+                <li>Install the latest stable version of Xcode (using <a href="https://developer.apple.com/xcode/">web
+                        download</a> or the <a href="https://itunes.apple.com/us/app/xcode/id497799835">Mac App
+                        Store</a>).</li>
+                <li>Configure the Xcode command-line tools to use the newly-installed version of Xcode by running the
+                    following from the
+                    command line:
+                    <ol>
+                        <div class="codeblock">
+                            <code>sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer<br />
+                        sudo xcodebuild -runFirstLaunch</code>
+                        </div>
+                    </ol>
+                </li>
+                <li>Make sure the Xcode license agreement is signed by either opening Xcode once and confirming or
+                    running sudo
+                    <code>xcodebuild -license</code> from the command line.
+                </li>
+            </ol>
+            <br /><br />
+            <span class="subtitle" style="font-size: 1.1em">Setting up an iOS Simulators</span>
+            <ol class="help-list">
+                <li>On your Mac, find the Simulator via Spotlight or by using the following command:<br />
+                    <div class="codeblock"><code>open -a simulator</code></div>
+                </li>
+                <li>Make sure your simulator is using a 64-bit device (iPhone 5s or later) by checking the settings in
+                    the simulator’s
+                    Hardware > Device menu.</li>
+                <li>Depending on your development machine’s screen size, simulated high-screen-density iOS devices might
+                    overflow your
+                    screen. Set the device scale under the Window > Scale menu in the simulator.</li>
+
+            </ol>
+            <span class="subtitle" style="font-size: 1.1em">Run a simple flutter app to test if setup worked:</span>
+            <ol class="help-list">
+                <li>Create a new Flutter app by running the following from the command line:<br />
+                    <div class="codeblock"><code>flutter create my_app</code></div>
+                </li>
+                <li>A my_app directory is created, containing Flutter’s starter app. Enter this directory:<br />
+                    <div class="codeblock"><code>cd my_app</code>
+                </li>
+                <li>To launch the app in the Simulator, ensure that the Simulator is running and enter:
+                    <br />
+                    <div class="codeblock"><code>flutter run</code></div>
+                </li>
+
+            </ol>
+            If this worked, then you should see the simulator launch an app called my_app. It will have a counter on the
+            screen that
+            you can push and watch the counter grow. This may take time to load depending on the machine. If this all
+            worked, you
+            have your Mac environment setup to develop flutter apps 😃. <a href="#questions">Questions?</a>
+        </section>
+
+    </section>
+
+
+    <footer>
+        <div class="footer-main-div">
+
+            <div class="footer-social-icons">
+                <ul>
+                    <!-- <li><a href="#" target="blabk"><i class="fab fa-facebook-square"></i></a></li> -->
+                    <li>
+                        <a href="https://www.instagram.com/dscfau/" target="blank"> <i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://discord.gg/39qJ3sE" target="blank"> <i class="fab fa-discord"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/dscfau" target="blank"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-menu-one">
+            <ul class="credits">
+                <li><span>Theme made with <i class="fas fa-heart" style="color: red;"></i> by <a
+                            href="https://github.com/Joy2469/WebsiteClub">
+                            Aditi Jain</a></span><span class="h-om cred-sep">, </span>
+                    <span>Modified by Benjamin Thaw</span>
+                </li>
+            </ul>
+            <br />
+            <ul class="info-links">
+
+                <li><a href="https://developers.google.com/community/dsc">Google Developer Student
+                        Clubs</a><span class="h-om"> @ </span><a href="https://fau.edu">Florida Atlantic
+                        University</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <div class="home-page-circle-1"></div>
+    <div class="home-page-circle-2"></div>
+    <div class="home-page-circle-3"></div>
+    <div class="home-page-circle-4"></div>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script id="navS" src="/resources/nav.js?page=flutterinstall"></script>
+    <script src="/resources/scripts.js"></script>
+
+    <style>
+        .codeblock {
+            margin: 10px;
+            margin-left: 20px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            overflow: scroll;
+        }
+
+        .codeblock.bash {
+            color: #86da50;
+        }
+
+        .codeblock.bash .cd {
+            color: #a0b944;
+        }
+
+
+        .step-img,
+        .step-img img,
+        .step-img a {
+            max-width: 50vw;
+            max-height: 50vh;
+        }
+
+        .step-img {
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+        pth {
+            color: #008F83
+        }
+
+        .help-list ol {
+            list-style-type: lower-alpha;
+            padding-inline-start: 30px;
+        }
+
+        .help-list ol ol {
+            list-style-type: lower-roman;
+            padding-inline-start: 30px;
+        }
+
+        .help-list ol ol ol {
+            padding-inline-start: 30px;
+            list-style-type: decimal;
+        }
+    </style>
+    <script>
+        const tabBar = new mdc.tabBar.MDCTabBar(document.querySelector("#mdc-tabs"))
+        document.querySelector("#mdc-tabs").addEventListener('MDCTabBar:activated', e => {
+            // console.log(e.detail.index);
+            index = e.detail.index;
+            if (index == 0) {
+                document.querySelector("#windows").style.display = 'block'
+                document.querySelector("#macos").style.display = 'none'
+            } else {
+                document.querySelector("#macos").style.display = 'block'
+                document.querySelector("#windows").style.display = 'none'
+            }
+        })
+        document.querySelector("#windows").style.display = 'block'
+        document.querySelector("#macos").style.display = 'none'
+
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get("os") == 'macos') {
+            tabBar.activateTab(1);
+        } else {
+            tabBar.activateTab(0);
+        }
+    </script>
+    <script>
+        const imgpath = "/resources/flutter-install/";
+        document.querySelectorAll(".step-img").forEach(img => {
+            var name = img.getAttribute("data-name")
+
+            if (name == undefined || name == "" || name == null) {
+                console.error("one image has invalid name");
+                return;
+            }
+            var url = imgpath + name;
+            img.innerHTML = `<a target="_blank" href="${url}"><img src="${url}"></a>`
+        })
+    </script>
+
+</body>
+
+</html>
