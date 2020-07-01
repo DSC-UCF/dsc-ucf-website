@@ -54,7 +54,7 @@ body {
 }
 
 .main-nav a:hover,
-.footer-social-icons a:hover {
+.footer-icons a:hover {
     color: #adadad;
 }
 
@@ -80,21 +80,21 @@ body {
     padding: 20px 0px;
 }
 
-.footer-social-icons {
+.footer-icons {
     width: 100%;
     height: auto;
     margin: auto;
 
 }
 
-.footer-social-icons ul {
+.footer-icons ul {
     margin-right: 0px;
     padding: 0px;
     text-align: center;
 
 }
 
-.footer-social-icons ul li {
+.footer-icons ul li {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -103,13 +103,13 @@ body {
     background: inherit;
 }
 
-.footer-social-icons ul li a {
+.footer-icons ul li a {
     font-size: 25px;
     /* color: white; */
     color: black;
 }
 
-.footer-social-icons ul li a i {
+.footer-icons ul li a i {
     line-height: 50px;
 
 }
