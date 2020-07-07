@@ -96,7 +96,7 @@ var isStillOpen = false;
 // const feedbackMenu = new mdc.menu.MDCMenu(document.querySelector('#feedback-menu'));
 // feedbackMenu.open = true;
 
-drawer.foundation_.handleScrimClick = function () {
+drawer.foundation.handleScrimClick = function () {
     mobileNav();
 }
 

@@ -14,17 +14,31 @@ if (navScriptTag != null) {
     }
     currentPage = scriptURL.searchParams.get("page");
 }
+var allowedHosts = [
+    '127.0.0.1',
+    'testing.dscfau.com',
+    'localhost',
+    'dscfau.com'
+]
+var prot = 'https:'
+var host = 'dscfau.com'
+if (allowedHosts.includes(window.location.hostname) == true) {
+    prot = window.location.protocol;
+    host = window.location.host;
+}
+var urlp = `${prot}//${host}`;
 var navItems = {
-    'home': { "name": "Home", "url": "https://dscfau.com/" },
-    'about': { "name": "About Us", "url": "https://dscfau.com/about" },
-    'events': { "name": "Events", "url": "https://dscfau.com/events", type: "dropdown" },
+    'home': { "name": "Home", "url": urlp + "/" },
+    'about': { "name": "About Us", "url": urlp + "/about" },
+    'events': { "name": "Events", "url": urlp + "/events", type: "dropdown" },
     'studyjam': { "name": "Study Jams", "parent": "events", "type": "group", "abbr": "CSJ" },
     'workshops': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
-    'csj1': { "name": "GCP Essentials", "url": "https://dscfau.com/events/csj1", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/gcp-essentials-badge.png" },
-    'csj2': { "name": "Google Developer Essentials", "url": "https://dscfau.com/events/csj2", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/google-dev-essentials.png" },
-    'csj3': { "name": "Security and Identity Fundamentals", "url": "https://dscfau.com/events/csj3", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/security-iden-fund.png" },
-    'csj4': { "name": "Introduction to ML: Language Processing", "url": "https://dscfau.com/events/csj4", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/ml-lang-processing.png" },
-    'flutter1': { "name": "Flutter Me Some Dart", "url": "https://dscfau.com/events/flutter-me-some-dart", "parent": "events", "group": "workshops", "icon": "https://dscfau.com/resources/events/flutter-icon.png" },
+    'csj1': { "name": "GCP Essentials", "url": urlp + "/events/csj1", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/gcp-essentials-badge.png" },
+    'csj2': { "name": "Google Developer Essentials", "url": urlp + "/events/csj2", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/google-dev-essentials.png" },
+    'csj3': { "name": "Security and Identity Fundamentals", "url": urlp + "/events/csj3", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/security-iden-fund.png" },
+    'csj4': { "name": "Introduction to ML: Language Processing", "url": urlp + "/events/csj4", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/ml-lang-processing.png" },
+    'flutter1': { "name": "Flutter Me Some Dart", "url": urlp + "/events/flutter-me-some-dart", "parent": "events", "group": "workshops", "icon": "https://dscfau.com/resources/events/flutter-icon.png" },
+    'quantum': { "name": "Introduction to Quantum Computing", "url": urlp + "/events/quantum", "parent": "events", "group": "workshops", "icon": "https://dscfau.com/resources/events/dsc-default.png" },
     // 'workshop': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
     // 'csj4': { "name": "How to restart a computer", "url": "/events/csj3", "parent": "events", "group": "workshop" },
 }
