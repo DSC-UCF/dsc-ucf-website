@@ -38,6 +38,7 @@ var navItems = {
     'csj3': { "name": "Security and Identity Fundamentals", "url": urlp + "/events/csj3", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/security-iden-fund.png" },
     'csj4': { "name": "Introduction to ML: Language Processing", "url": urlp + "/events/csj4", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/ml-lang-processing.png" },
     'flutter1': { "name": "Flutter Me Some Dart", "url": urlp + "/events/flutter-me-some-dart", "parent": "events", "group": "workshops", "icon": "https://dscfau.com/resources/events/flutter-icon.png" },
+    'quantum': { "name": "Introduction to Quantum Computing", "url": urlp + "/events/quantum", "parent": "events", "group": "workshops", "icon": "https://dscfau.com/resources/events/dsc-default.png" },
     // 'workshop': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
     // 'csj4': { "name": "How to restart a computer", "url": "/events/csj3", "parent": "events", "group": "workshop" },
 }
