@@ -26,3 +26,18 @@
 /flutter-1                      /events/flutter-me-some-dart
 /go/studyjam4                   https://google.qwiklabs.com/quests/82?event=Your&utm_source=qwiklabs&utm_medium=lp&utm_campaign=studyjam
 /flutter-hendrix                /events/flutter-me-some-dart
+
+# Let's Build a Mobile App
+/events/mobile-app              /events/build-a-mobile-app
+/mobile-app                     /events/build-a-mobile-app
+/rsvp/mobile-app                https://dsc.community.dev/e/mgbzt2/
+/rsvp/build-a-mobile-app        https://dsc.community.dev/e/mgbzt2/
+/events/lets-build-a-mobile-app /events/build-a-mobile-app
+/help/install-flutter           /help/flutter-install
+
+# /e pages
+/e/mobile-app                   /events/build-a-mobile-app
+
+# keep this below the above section
+/e/:event                       /events/:event
+/e                              /events
