@@ -34,6 +34,9 @@
 /rsvp/build-a-mobile-app        https://dsc.community.dev/e/mgbzt2/
 /events/lets-build-a-mobile-app /events/build-a-mobile-app
 /help/install-flutter           /help/flutter-install
+/mobile-app/network-call        https://gist.github.com/jonyataco/98a2df994907431c6d0d61a7422f2f73
+/mobile-app/github              https://github.com/DSC-FAU/Fun-With-Flutter-Event-App
+/mobile-app/starter             https://github.com/DSC-FAU/Fun-With-Flutter-Event-Starter
 
 # /e pages
 /e/mobile-app                   /events/build-a-mobile-app
