@@ -1,6 +1,6 @@
 Hey {FIRST}!\n\
 \n\
-Welcome to the Developer Student Club (DSC) at FAU. Here, we welcome students from all majors to learn essential skills\
+Welcome to the Developer Student Club (DSC) at UCF. Here, we welcome students from all majors to learn essential skills\
 surrounding Google Cloud and other cutting-edge developer technologies. In school, we often see that students learn skills in lectures but never get the chance to use those skills before they\'re needed. Developer Student Clubs aim to bridge the gap between theory and practice through hands-on practice.\n\
 \n\
 Throughout the coming months, we\'ll be hosting many exciting events, including Cloud Study Jams on various topics (often about Cloud technologies), hands-on workshops, and hackathons. Additionally, students will get the chance to solve a problem they identify in their local community using Google Cloud technologies by participating in the Solution Challenge.\n\
@@ -9,17 +9,17 @@ To stay in the loop, make sure to join our Discord server below to receive updat
 \n\
 DSC Pages:\n\
 \n\
-Website: https://dscfau.com\n\
-Discord Server: https://discord.gg/39qJ3sE\n\
-Twitter: https://twitter.com/dscfau\n\
-Instagram: https://www.instagram.com/dscfau/\n\
+Website: https://dscucf.com\n\
+Discord Server: https://discord.gg/Pk269nc\n\
+Twitter: https://twitter.com/dscucf\n\
+Instagram: https://www.instagram.com/dscucf/\n\
 \n\
 Thanks for joining! Feel free to contact me with any questions.\n\
 \n\
 Alex Robinson\n\
-FAU Developer Student Club - President\n\
+UCF Developer Student Club - President\n\
 407-701-5208\n\
-RobinsonAlex2019@fau.edu\n\
+Alex@AlexRobinson.com\n\
 \n\
 \n\
 \n\
