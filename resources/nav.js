@@ -33,7 +33,8 @@ var navItems = {
     'events': { "name": "Events", "url": urlp + "/events", type: "dropdown" },
     'studyjam': { "name": "Study Jams", "parent": "events", "type": "group", "abbr": "CSJ" },
     //'workshops': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
-    'csj1': { "name": "GCP Essentials", "url": urlp + "/events/csj1", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/gcp-essentials-badge.png" },
+    'csj5': { "name": "Getting Started with Google Cloud", "url": urlp + "/events/get-started-with-gcp/", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/64x64/gcp-essentials-badge.png" }
+    //'csj1': { "name": "GCP Essentials", "url": urlp + "/events/csj1", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/gcp-essentials-badge.png" },
     //'csj2': { "name": "Google Developer Essentials", "url": urlp + "/events/csj2", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/google-dev-essentials.png" },
     //'csj3': { "name": "Security and Identity Fundamentals", "url": urlp + "/events/csj3", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/security-iden-fund.png" },
     //'csj4': { "name": "Introduction to ML: Language Processing", "url": urlp + "/events/csj4", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/ml-lang-processing.png" },
