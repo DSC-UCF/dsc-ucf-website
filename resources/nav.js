@@ -31,6 +31,7 @@ var navItems = {
     'home': { "name": "Home", "url": urlp + "/" },
     'about': { "name": "About Us", "url": urlp + "/about" },
     'events': { "name": "Events", "url": urlp + "/events", type: "dropdown" },
+    'blogs': { "name": "Blogs", "url": urlp + "/blogs" },
     'studyjam': { "name": "Study Jams", "parent": "events", "type": "group", "abbr": "CSJ" },
     //'workshops': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
     'csj5': { "name": "Getting Started with Google Cloud", "url": urlp + "/events/get-started-with-gcp/", "parent": "events", "group": "studyjam", "icon": "https://dscfau.com/resources/events/64x64/gcp-essentials-badge.png" }
