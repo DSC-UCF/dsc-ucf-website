@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/resources/styles/styles.css" rel="stylesheet">
+    <link href="/resources/styles/pages/index.css" rel="stylesheet">
+    <link href="/resources/styles/pages/events.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="/resources/styles/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
+
+    <title>Events | UCF Developer Student Club</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+
+    <meta name="description" content="Bridging the gap between theory and practice.">
+    <meta name="keywords" content="Google Developer Student Clubs, University of Central Florida, UCF, Coding">
+</head>
+
+<body class="container full-height-grow">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GLBH2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="main-header">
+        <span class="brand-logo">
+            <a href="/" class="">
+                <img src="/images/logo.png">
+            </a>
+            <a href="/" class="brand-logo-name-a">
+                <div class="brand-logo-name">
+                    <div class="">Developer Student Clubs</div>
+                    <div class="brand-logo-school">University of Central Florida</div>
+                </div>
+            </a>
+        </span>
+        <nav class="main-nav">
+            <div class="navbar">
+                <ul id="nav" class="responsfive">
+                    <!-- Add items in nav.js -->
+                    <li class="mobile-trigger">
+                        <button id="mobile-trigger-link"
+                            class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+                            onclick="mobileNav()">menu
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <aside class="mdc-drawer mdc-drawer--modal mdc-drawer--dismissible">
+        <div class="mdc-drawer__header">
+            <button id="mobile-trigger-link-mn" class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+                onclick="mobileNav()">menu
+            </button>
+            <div class="mdc-drawer__title" id="mn-title">
+                <a href="/">
+                    <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
+                </a>
+                <!-- <img id="mn-logo" src="/images/logo.png" /> -->
+            </div>
+        </div>
+        <div class="mdc-drawer__content">
+
+            <nav class="mdc-list" id="new-mn-nav" dir="ltr">
+                <a style="display: none" id="mn-sample" class="mdc-list-item mdc-ripple-surface" href="#"
+                    aria-current="page">
+                    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i> -->
+                    <span class="mdc-list-item__text"></span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mn">
+        <div id="mn-overlay" class="hidden"></div>
+        <nav id="mobile-nav" class="mobile-nav hidden">
+
+            <ul id="m-nav-list">
+                <!-- DO NOT ADD ITEMS -->
+            </ul>
+
+        </nav>
+    </div>
+    <section class="event-main-section">
+        <div class="call-to-action">
+            <h1 class="title">Blogs</h1>
+            We write awesome content for everyone to learn more at any time!
+            <!-- <br /> <br />
+            Access our <a rel="noopener" href="https://calendar.google.com/calendar/b/3?cid=ZHNjdXRkQGdtYWlsLmNvbQ"
+                target="_blank"> Event calendar.</a> -->
+        </div>
+        <!--                DEsigned by Freepik href="https://www.freepik.com/free-photos-vectors/delivery">Delivery vector created by freepik - www.freepik.com</a>-->
+        <!-- <img class="event-image" src="/images/events.png" alt="Team work flat art"
+            href="https://www.freepik.com/free-photos-vectors/delivery" target="_blank"> -->
+    </section>
+
+    <section class="event_description">
+
+        <div id="flutter1" class="event">
+            <div class="event-badge no-br">
+                <a href="/events/build-a-mobile-app">
+                    <img class="normal" alt="Flutter icon" src="/resources/events/dsc-default.png" target="_blank">
+                </a>
+            </div>
+            <h3>Earning Your Google Associate Cloud Engineer Certification</h3>
+            <!-- <span class="event-date">August 28th, 2020 (2:00pm - 3:30pm Eastern)</span> -->
+            <span class="event-date">11/11/2020</span>
+            <p>
+                How and why you should become a certified Google Associate Cloud Engineer
+            </p>
+            <div class="event-buttons">
+                <!-- <a target="_blank" href="/rsvp/build-a-mobile-app" class="event-rsvp btn">RSVP</a> -->
+                <a href="/blogs/blog_post_1" class="event-details btn">Click Here to Read!</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-main-div">
+
+            <div class="footer-icons">
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCGZXVoZ3MMvF9gGfTxsKFVQ?view_as=subscriber"
+                            target="_blank"><i class="y-ic"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/dscucf/" target="_blank"> <i class="in-ic"></i></a>
+                    </li>
+                    <li><a href="https://discord.gg/Pk269nc" target="_blank"> <i class="d-ic"></i></a></li>
+                    <li>
+                        <a href="https://twitter.com/dscucf" target="_blank"><i class="tw-ic"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-menu-one">
+            <ul class="credits">
+                <li><span>Theme made with <i class="fas fa-heart" style="color: red;"></i> by <a
+                            href="https://github.com/Joy2469/WebsiteClub">
+                            Aditi Jain</a></span><span class="h-om cred-sep">, </span>
+                    <span>Modified by Benjamin Thaw</span>
+                </li>
+            </ul>
+            <br />
+            <ul class="info-links">
+
+                <li><a href="https://developers.google.com/community/dsc">Google Developer Student Clubs</a><span
+                        class="h-om"> @ </span><a href="https://ucf.edu">The University of Central Florida</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <div class="home-page-circle-1"></div>
+    <div class="home-page-circle-2"></div>
+    <div class="home-page-circle-3"></div>
+    <div class="home-page-circle-4"></div>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script id="navS" src="/resources/nav.js?page=events"></script>
+    <script src="/resources/scripts.js"></script>
+</body>
+
+</html>
