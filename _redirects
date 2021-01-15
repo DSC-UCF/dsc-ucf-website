@@ -36,10 +36,8 @@
 
 /events/full-stack                             /events/full-stack-web-app
 /events/fullstack                              /events/full-stack-web-app
-
-/rsvp/full-stack                               /https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-building-a-full-stack-web-app/#/                        
+/rsvp/full-stack                               https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-building-a-full-stack-web-app/#/                        
 /rsvp/fullstack                                /rsvp/full-stack
-
 
 # /e pages
 /e/googlecloud                          /events/get-started-with-gcp
@@ -47,6 +45,9 @@
 /e/gcp                                  /e/googlecloud
 /events/gcp-essentials                  /events/get-started-with-gcp
 
+/e/full-stack                           /events/full-stack
+/e/fullstack                            /e/full-stack
+/e/resources                            https://docs.google.com/document/d/1-kMReDv1vV3S1OfNRJg9qaO9uTjQTu4YlslRk_4iUmM/edit?usp=sharing
 
 # keep this below the above section
 /e/:event                       /events/:event
