@@ -32,8 +32,9 @@ var navItems = {
     'about': { "name": "About Us", "url": urlp + "/about" },
     'events': { "name": "Events", "url": urlp + "/events", type: "dropdown" },
     'blogs': { "name": "Blogs", "url": urlp + "/blogs" },
-    'studyjam': { "name": "Study Jams", "parent": "events", "type": "group", "abbr": "CSJ" },
+    'studyjam': { "name": "Workshop", "parent": "events", "type": "group", "abbr": "WS" },
     //'workshops': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
+    'fullStack': { "name": "Building a Full Stack Web App", "url": urlp + "/events/full-stack-web-app/", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/full-stack.png" },
     'csj5': { "name": "Getting Started with Google Cloud", "url": urlp + "/events/get-started-with-gcp/", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/gcp-essentials-badge.png" }
     //'csj1': { "name": "GCP Essentials", "url": urlp + "/events/csj1", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/gcp-essentials-badge.png" },
     //'csj2': { "name": "Google Developer Essentials", "url": urlp + "/events/csj2", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/google-dev-essentials.png" },
