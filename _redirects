@@ -49,6 +49,10 @@
 /e/fullstack                            /e/full-stack
 /e/resources                            https://docs.google.com/document/d/1-kMReDv1vV3S1OfNRJg9qaO9uTjQTu4YlslRk_4iUmM/edit?usp=sharing
 
+/e/challenge-1                          https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-solution-challenge-design-series-problem-identification/#/
+/e/challenge1                           /e/challenge-1
+
 # keep this below the above section
 /e/:event                       /events/:event
 /e                              /events
+
