@@ -1,0 +1,29 @@
+echo "Setting up file structure"
+cd ~
+mkdir quiz_app
+cd ~/quiz_app
+mkdir quiz
+mkdir quiz/api quiz/gcp
+touch quiz/__init__.py quiz/api/api.py quiz/api/routes.py quiz/gcp/datastore.py requirements.txt run_server.py
+echo "Creating requirements.txt file"
+echo "Flask>=0.12
+google-cloud>=0.27.0
+google-cloud-core>=0.27.1
+google-cloud-datastore>=1.3.0" > requirements.txt
+
+echo "Creating virtual environment"
+cd ~
+virtualenv -p python3 venv
+source venv/bin/activate
+cd ~/quiz_app
+echo "Running pip install"
+pip install -r requirements.txt
+
+echo "Getting web app"
+cd ~
+git clone https://github.com/GoogleCloudPlatform/training-data-analyst
+cp -r ~/training-data-analyst/courses/developingapps/python/datastore/start/quiz/webapp ~/quiz_app/quiz
+rm -rf ~/training-data-analyst
+cd ~/quiz_app
+
+echo "All set up! Enjoy the event!"
