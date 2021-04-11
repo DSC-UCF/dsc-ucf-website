@@ -51,8 +51,10 @@
 
 /e/challenge-1                          https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-solution-challenge-design-series-problem-identification/#/
 /e/challenge1                           /e/challenge-1
+/e/session6                             https://google.qwiklabs.com/quests/41?event=Your&utm_source=qwiklabs&utm_medium=lp&utm_campaign=studyjam
 
 # keep this below the above section
 /e/:event                       /events/:event
 /e                              /events
+
 
