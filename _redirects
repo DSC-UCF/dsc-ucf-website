@@ -40,6 +40,14 @@
 /rsvp/full-stack                               https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-building-a-full-stack-web-app-cloud-storage-using-datastore/                        
 /rsvp/fullstack                                /rsvp/full-stack
 
+# FE Study Jam
+
+/events/fe-studyjam                     /events/fe-study-jam
+/events/festudyjam                      /events/fe-study-jam
+/rsvp/fe-study-jam                      https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-foundation-exam-study-jam-and-info-session/
+/rsvp/fe-studyjam                       /rsvp/fe-study-jam
+/rsvp/festudyjam                        /rsvp/fe-study-jam 
+
 # /e pages
 /e/googlecloud                          /events/get-started-with-gcp
 /e/google-cloud                         /e/googlecloud
