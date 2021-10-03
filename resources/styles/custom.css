@@ -101,6 +101,10 @@ p a:not(.btn):hover {
   content: "\f392";
 }
 
+.li-ic:before {
+  content: "\f08c"
+}
+
 /* end icons */
 
 .title h1 {
