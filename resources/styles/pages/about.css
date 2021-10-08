@@ -1,9 +1,9 @@
-.discover-main-section {
+#bootstrap-overrides .discover-main-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
-    margin-top: 10px !important;
+    margin-top: 10px;
 }
 
 .discover-main-section .team-image {
