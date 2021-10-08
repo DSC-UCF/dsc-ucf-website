@@ -32,6 +32,7 @@ var navItems = {
     'about': { "name": "About Us", "url": urlp + "/about" },
     'events': { "name": "Events", "url": urlp + "/events", type: "dropdown" },
     'blogs': { "name": "Blogs", "url": urlp + "/blogs" },
+    'calendar': { "name": "Calendar", "url": urlp + "/calendar" },
     'studyjam': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
     //'workshops': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
     'fullStack': { "name": "Building a Full Stack Web App", "url": urlp + "/events/full-stack-web-app/", "parent": "events", "group": "studyjam", "icon": "https://dscucf.com/resources/events/64x64/full-stack.png" },
