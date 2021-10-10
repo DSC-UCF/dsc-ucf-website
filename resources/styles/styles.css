@@ -74,16 +74,6 @@ body {
 
 /*Calendar*/
 
-@media (max-width: 550px) {
-    .big-container {
-        display: none;
-    }
- }
- @media (min-width: 550px) {
-    .small-container {
-        display: none;
-    }
- }
  /* Responsive iFrame */
  .responsive-iframe-container {
     position: relative;
