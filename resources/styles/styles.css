@@ -72,6 +72,35 @@ body {
     height: 140px;
 }
 
+/*Calendar*/
+
+@media (max-width: 550px) {
+    .big-container {
+        display: none;
+    }
+ }
+ @media (min-width: 550px) {
+    .small-container {
+        display: none;
+    }
+ }
+ /* Responsive iFrame */
+ .responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+ }
+ .responsive-iframe-container iframe,   
+ .responsive-iframe-container object,  
+ .responsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ }
 
 /*FOOTER----------------------*/
 .footer-main-div {
@@ -183,7 +212,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/*BUTOON*/
+/*BUTTON*/
 .btn {
     color: white;
     /* background: linear-gradient(90deg, #047CFF 0%, #7F5EFF 100%); */
