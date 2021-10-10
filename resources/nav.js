@@ -123,7 +123,6 @@ Object.keys(navItems).forEach(el => {
 
             } else {
                 if (navItm.active) newLi.classList.add("active");
-                console.log("im here :)");
 
                 newLi.classList.add("mdc-ripple-surface");
                 newLi.setAttribute("onclick", `window.location.href = '${navItm.url}'`)
@@ -145,7 +144,7 @@ Object.keys(navItems).forEach(el => {
             }
 
             var parent = document.querySelector("#nav_itm_" + navItm.parent)
-
+            console.log(parent);
             if (navItm.active == true) {
                 parent.classList.add("active");
                 // newLi.classList.add("mdc-ripple-upgraded--background-focused")
