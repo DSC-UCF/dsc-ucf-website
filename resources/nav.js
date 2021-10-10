@@ -49,6 +49,7 @@ var navItems = {
     // 'csj4': { "name": "How to restart a computer", "url": "/events/csj3", "parent": "events", "group": "workshop" },
 }
 
+console.log("aRE YOU IN HERE");
 
 try {
     navItems[currentPage].active = true;
