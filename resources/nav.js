@@ -70,7 +70,7 @@ Object.keys(navItems).forEach(el => {
     if (navItm.active) 
     {
         newLi.classList.add("active");
-        console.log("Added an active for navitem: " + navItm)
+        console.log("Added an active for navitem: " + navItm);
     }
     
     var newA = document.createElement("a");
