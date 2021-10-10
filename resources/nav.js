@@ -49,7 +49,6 @@ var navItems = {
     // 'csj4': { "name": "How to restart a computer", "url": "/events/csj3", "parent": "events", "group": "workshop" },
 }
 
-console.log("aRE YOU IN HERE");
 
 try {
     navItems[currentPage].active = true;
@@ -71,9 +70,9 @@ Object.keys(navItems).forEach(el => {
     if (navItm.active) 
     {
         newLi.classList.add("active");
-        console.log("Added an active for navitem: " + navItm);
+        console.log("Added an active for navitem: ");
+        Object.keys(navItm).forEach((prop)=> console.log(prop));
     }
-    
     var newA = document.createElement("a");
     newA.setAttribute("href", navItm.url);
     newA.innerHTML = navItm.name;
