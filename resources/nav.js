@@ -67,7 +67,12 @@ Object.keys(navItems).forEach(el => {
     var newLi = document.createElement("li");
     newLi.classList.add("itm");
     newLi.setAttribute("id", "nav_itm_" + el);
-    if (navItm.active) newLi.classList.add("active");
+    if (navItm.active) 
+    {
+        newLi.classList.add("active");
+        console.log("Added an active for navitem: " + navItm)
+    }
+    
     var newA = document.createElement("a");
     newA.setAttribute("href", navItm.url);
     newA.innerHTML = navItm.name;
