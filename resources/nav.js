@@ -67,12 +67,7 @@ Object.keys(navItems).forEach(el => {
     var newLi = document.createElement("li");
     newLi.classList.add("itm");
     newLi.setAttribute("id", "nav_itm_" + el);
-    if (navItm.active) 
-    {
-        newLi.classList.add("active");
-        console.log("Added an active for navitem: ");
-        Object.keys(navItm).forEach((prop)=> console.log(navItm.prop));
-    }
+    if (navItm.active) newLi.classList.add("active");
     var newA = document.createElement("a");
     newA.setAttribute("href", navItm.url);
     newA.innerHTML = navItm.name;
@@ -128,7 +123,7 @@ Object.keys(navItems).forEach(el => {
 
             } else {
                 if (navItm.active) newLi.classList.add("active");
-
+                console.log("im here :)");
 
                 newLi.classList.add("mdc-ripple-surface");
                 newLi.setAttribute("onclick", `window.location.href = '${navItm.url}'`)
