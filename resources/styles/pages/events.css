@@ -77,6 +77,35 @@
 }
 /* End of temporary */
 
+/* Event Sections */
+
+.divider {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.divider:before, .divider:after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.divider:before {
+    background: linear-gradient(to right, transparent, #818078);
+    right: .5em;
+    margin-left: -50%;
+}
+
+.divider:after {
+    background: linear-gradient(to right, #818078, transparent);
+    left: .5em;
+    margin-right: -50%;
+}
+
 
 /*TEAM INFO*/
 /*LINE IN THE MIDDLE*/
