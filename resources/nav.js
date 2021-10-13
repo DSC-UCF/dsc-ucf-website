@@ -143,8 +143,7 @@ Object.keys(navItems).forEach(el => {
 
             }
 
-            var parent = document.querySelector("#nav_itm_" + navItm.parent)
-            console.log(parent);
+            var parent = document.querySelector("#nav_itm_" + navItm.parent);
             if (navItm.active == true) {
                 parent.classList.add("active");
                 // newLi.classList.add("mdc-ripple-upgraded--background-focused")
