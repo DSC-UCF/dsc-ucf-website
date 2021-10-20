@@ -72,6 +72,7 @@ Object.keys(navItems).forEach(el => {
     newA.setAttribute("href", navItm.url);
     newA.innerHTML = navItm.name;
 
+    /*
     if (navItm.type == "dropdown") {
         var menu = document.createElement("div");
         menu.classList.add("mdc-menu", "mdc-menu-surface");
@@ -95,8 +96,8 @@ Object.keys(navItems).forEach(el => {
         newLi.setAttribute("onmouseout", "isStillOpen = false; setTimeout(() => {if (isStillOpen == false) mdc_menu.open = false}, 100);");
     }
     newLi.appendChild(newA);
+    */
 
-/*
     if (navItm.parent != undefined) {
         try {
             var newLi = document.createElement("li");
@@ -142,7 +143,7 @@ Object.keys(navItems).forEach(el => {
 
 
             }
-            */
+            
             var parent = document.querySelector("#nav_itm_" + navItm.parent);
             if (navItm.active == true) {
                 parent.classList.add("active");
