@@ -30,7 +30,7 @@ var urlp = `${prot}//${host}`;
 var navItems = {
     'home': { "name": "Home", "url": urlp + "/" },
     'about': { "name": "About Us", "url": urlp + "/about" },
-    'events': { "name": "Events", "url": urlp + "/events", type: "dropdown" },
+    'events': { "name": "Events", "url": urlp + "/events" }, // , type: "dropdown"
     'calendar': { "name": "Calendar", "url": urlp + "/calendar" },
     'blogs': { "name": "Blogs", "url": urlp + "/blogs" },
     'studyjam': { "name": "Workshops", "parent": "events", "type": "group", "abbr": "WS" },
@@ -72,7 +72,6 @@ Object.keys(navItems).forEach(el => {
     newA.setAttribute("href", navItm.url);
     newA.innerHTML = navItm.name;
 
-    /*
     if (navItm.type == "dropdown") {
         var menu = document.createElement("div");
         menu.classList.add("mdc-menu", "mdc-menu-surface");
@@ -96,7 +95,7 @@ Object.keys(navItems).forEach(el => {
         newLi.setAttribute("onmouseout", "isStillOpen = false; setTimeout(() => {if (isStillOpen == false) mdc_menu.open = false}, 100);");
     }
     newLi.appendChild(newA);
-    */
+
 
     if (navItm.parent != undefined) {
         try {
