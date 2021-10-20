@@ -96,7 +96,7 @@ Object.keys(navItems).forEach(el => {
     }
     newLi.appendChild(newA);
 
-
+/*
     if (navItm.parent != undefined) {
         try {
             var newLi = document.createElement("li");
@@ -142,7 +142,7 @@ Object.keys(navItems).forEach(el => {
 
 
             }
-
+            */
             var parent = document.querySelector("#nav_itm_" + navItm.parent);
             if (navItm.active == true) {
                 parent.classList.add("active");
