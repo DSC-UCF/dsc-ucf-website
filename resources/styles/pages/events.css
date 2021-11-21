@@ -48,6 +48,14 @@
   width: 100px;
 }
 
+.discover-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-top: 10px;
+}
+
 @media (max-width: 900px) {
   .discover-main-section {
     flex-direction: column;
