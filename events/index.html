@@ -1,123 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');</script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-55GLBH2");
+    </script>
     <!-- End Google Tag Manager -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="/resources/styles/styles.css" rel="stylesheet">
-    <link href="/resources/styles/pages/index.css" rel="stylesheet">
-    <link href="/resources/styles/pages/events.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@10.0.0/dist/material-components-web.min.css">
-    <link href="/resources/styles/custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="/resources/styles/styles.css" rel="stylesheet" />
+    <link href="/resources/styles/pages/index.css" rel="stylesheet" />
+    <link href="/resources/styles/pages/events.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@10.0.0/dist/material-components-web.min.css"
+    />
+    <link href="/resources/styles/custom.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
 
-
-    <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6e7b45b5ac.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Events | UCF Google Developer Student Club</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/resources/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/resources/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/resources/favicons/favicon-16x16.png"
+    />
 
-    <meta name="description" content="Bridging the gap between theory and practice.">
-    <meta name="keywords" content="Google Developer Student Clubs, University of Central Florida, UCF, Coding">
-</head>
+    <meta
+      name="description"
+      content="Bridging the gap between theory and practice."
+    />
+    <meta
+      name="keywords"
+      content="Google Developer Student Clubs, University of Central Florida, UCF, Coding"
+    />
+  </head>
 
-<body class="container full-height-grow">
+  <body class="container full-height-grow">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GLBH2" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-55GLBH2"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="main-header">
-        <span class="brand-logo">
-            <a href="/" class="">
-                <img src="/images/logo.png">
-            </a>
-            <a href="/" class="brand-logo-name-a">
-                <div class="brand-logo-name">
-                    <div class="">Google Developer Student Clubs</div>
-                    <div class="brand-logo-school">University of Central Florida</div>
-                </div>
-            </a>
-        </span>
-        <nav class="main-nav">
-            <div class="navbar">
-                <ul id="nav" class="responsfive">
-                    <!-- Add items in nav.js -->
-                    <li class="mobile-trigger">
-                        <button id="mobile-trigger-link"
-                            class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
-                            onclick="mobileNav()">menu
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
+      <span class="brand-logo">
+        <a href="/" class="">
+          <img src="/images/logo.png" />
+        </a>
+        <a href="/" class="brand-logo-name-a">
+          <div class="brand-logo-name">
+            <div class="">Google Developer Student Clubs</div>
+            <div class="brand-logo-school">University of Central Florida</div>
+          </div>
+        </a>
+      </span>
+      <nav class="main-nav">
+        <div class="navbar">
+          <ul id="nav" class="responsfive">
+            <!-- Add items in nav.js -->
+            <li class="mobile-trigger">
+              <button
+                id="mobile-trigger-link"
+                class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+                onclick="mobileNav()"
+              >
+                menu
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <aside class="mdc-drawer mdc-drawer--modal mdc-drawer--dismissible">
-        <div class="mdc-drawer__header">
-            <button id="mobile-trigger-link-mn" class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
-                onclick="mobileNav()">menu
-            </button>
-            <div class="mdc-drawer__title" id="mn-title">
-                <a href="/">
-                    <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
-                </a>
-                <!-- <img id="mn-logo" src="/images/logo.png" /> -->
-            </div>
+      <div class="mdc-drawer__header">
+        <button
+          id="mobile-trigger-link-mn"
+          class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+          onclick="mobileNav()"
+        >
+          menu
+        </button>
+        <div class="mdc-drawer__title" id="mn-title">
+          <a href="/">
+            <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
+          </a>
+          <!-- <img id="mn-logo" src="/images/logo.png" /> -->
         </div>
-        <div class="mdc-drawer__content">
-
-            <nav class="mdc-list" id="new-mn-nav" dir="ltr">
-                <a style="display: none" id="mn-sample" class="mdc-list-item mdc-ripple-surface" href="#"
-                    aria-current="page">
-                    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i> -->
-                    <span class="mdc-list-item__text"></span>
-                </a>
-            </nav>
-        </div>
+      </div>
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list" id="new-mn-nav" dir="ltr">
+          <a
+            style="display: none"
+            id="mn-sample"
+            class="mdc-list-item mdc-ripple-surface"
+            href="#"
+            aria-current="page"
+          >
+            <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i> -->
+            <span class="mdc-list-item__text"></span>
+          </a>
+        </nav>
+      </div>
     </aside>
     <div class="mdc-drawer-scrim"></div>
     <div class="mn">
-        <div id="mn-overlay" class="hidden"></div>
-        <nav id="mobile-nav" class="mobile-nav hidden">
-
-            <ul id="m-nav-list">
-                <!-- DO NOT ADD ITEMS -->
-            </ul>
-
-        </nav>
+      <div id="mn-overlay" class="hidden"></div>
+      <nav id="mobile-nav" class="mobile-nav hidden">
+        <ul id="m-nav-list">
+          <!-- DO NOT ADD ITEMS -->
+        </ul>
+      </nav>
     </div>
-    <section class="event-main-section">
-        <div class="call-to-action">
-            <h1 class="title">Events</h1>
-            We plan awesome events for everyone. And yes! we like to study and chill.
-            <!-- <br /> <br />
+    <section class="discover-main-section">
+      <div class="call-to-action">
+        <h1 class="title">Events</h1>
+        We plan awesome events for everyone such as workshops to learn new
+        technologies, interview prep, study sessions, and much more. And yes! we
+        like to study and chill.
+        <!-- <br /> <br />
             Access our <a rel="noopener" href="https://calendar.google.com/calendar/b/3?cid=ZHNjdXRkQGdtYWlsLmNvbQ"
                 target="_blank"> Event calendar.</a> -->
-        </div>
-        <!--                DEsigned by Freepik href="https://www.freepik.com/free-photos-vectors/delivery">Delivery vector created by freepik - www.freepik.com</a>-->
-        <!-- <img class="event-image" src="/images/events.png" alt="Team work flat art"
-            href="https://www.freepik.com/free-photos-vectors/delivery" target="_blank"> -->
+      </div>
+      <!--                DEsigned by Freepik href="https://www.freepik.com/free-photos-vectors/delivery">Delivery vector created by freepik - www.freepik.com</a>-->
+      <img
+        class="team-image"
+        src="/resources/events/nov-calendar.png"
+        alt="Team work flat art"
+      />
     </section>
 
     <section class="event_description">
-
-        <!-- <div id="flutter1" class="event">
+      <!-- <div id="flutter1" class="event">
             <div class="event-badge no-br">
                 <a href="/events/build-a-mobile-app">
                     <img class="normal" alt="Flutter icon" src="/resources/events/flutter-icon.png" target="_blank">
@@ -127,7 +179,7 @@
             <strong class="event-type">Workshop</strong>
             <strong class="event-type">Fun with Flutter - Part 1</strong>
             <span class="event-date">August 28th, 2020 (2:00pm - 3:30pm Eastern)</span> -->
-        <!-- <span class="event-date">August 28th, 2020</span>
+      <!-- <span class="event-date">August 28th, 2020</span>
             <p>
                 Join us as our tech lead, Jonathan Yataco, introduces the significance of Flutter and follow along to
                 create your own mobile weather app to demonstrate Flutter's capabilities.
@@ -140,270 +192,393 @@
             </p>
             <div class="event-buttons">
                  <a target="_blank" href="/rsvp/build-a-mobile-app" class="event-rsvp btn">RSVP</a> -->
-        <!-- <a href="/events/build-a-mobile-app" class="event-details btn">More Details</a>
+      <!-- <a href="/events/build-a-mobile-app" class="event-details btn">More Details</a>
             </div>
         </div> -->
 
-        <h3 class="divider">Upcoming Events</h3>
+      <h3 class="divider">Upcoming Events</h3>
 
-        <!-- Intro to Python -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/intro-to-python">
-                    <img class="normal" alt="App Engine" src="/resources/events/intro-to-python.png" target="_blank">
-                </a>
-            </div>
-            <h3>Intro to Python</h3>
-            <strong class="event-type">Workshop</strong>
-            <span class="event-date">November 17th, 2021</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Join the Google Developer Student Club and learn the basics of the programming language Python, a versatile 
-                and widely-popular programming language. Use your new knowledge to create a hangman terminal game!
-                <br /><br />
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/intro-to-python" class="event-rsvp btn">RSVP</a>
-                <a href="/events/intro-to-python" class="event-details btn btn-secondary">More Details</a>
-            </div>
+      <!-- Intro to Python -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/intro-to-python">
+            <img
+              class="normal"
+              alt="App Engine"
+              src="/resources/events/intro-to-python.png"
+              target="_blank"
+            />
+          </a>
         </div>
-
-        <!-- November General Body Meeting -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/nov-gbm">
-                    <img class="normal" alt="App Engine" src="/resources/events/oct-gbm.png" target="_blank">
-                </a>
-            </div>
-            <h3>November General Body Meeting</h3>
-            <strong class="event-type">Meeting</strong>
-            <span class="event-date">November 8th, 2021</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Join GDSC UCF for our monthly General Body Meeting, where we'll be going over our events for the month, 
-                how to get involved, and wrapping up with a guest speaker presentation before our post-GBM social at Gringos! 
-                <br /><br />
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/nov-gbm" class="event-rsvp btn">RSVP</a>
-                <a href="/events/nov-gbm" class="event-details btn btn-secondary">More Details</a>
-            </div>
+        <h3>Intro to Python</h3>
+        <strong class="event-type">Workshop</strong>
+        <span class="event-date">November 17th, 2021</span>
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Join the Google Developer Student Club and learn the basics of the
+          programming language Python, a versatile and widely-popular
+          programming language. Use your new knowledge to create a hangman
+          terminal game!
+          <br /><br />
+        </p>
+        <div class="event-buttons">
+          <a target="_blank" href="/rsvp/intro-to-python" class="event-rsvp btn"
+            >RSVP</a
+          >
+          <a
+            href="/events/intro-to-python"
+            class="event-details btn btn-secondary"
+            >More Details</a
+          >
         </div>
+      </div>
 
-        <h3 class="divider">Past Events</h3>
-
-        <!-- Portfolio Event 3 -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/javascript-features">
-                    <img class="normal" alt="App Engine" src="/resources/events/javascript.png" target="_blank">
-                </a>
-            </div>
-            <h3>Creating Responsive Website Features in JavaScript</h3>
-            <strong class="event-type">Workshop</strong>
-            <span class="event-date">October 25th, 2021</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Join the GDSC UCF in part three of our Portfolio Website Building series. We'll be going over 
-                how to add responsive JavaScript features on a site built with HTML & CSS! 
-                <br /><br />
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/javascript" class="event-rsvp btn">RSVP</a>
-                <a href="/events/javascript-features" class="event-details btn btn-secondary">More Details</a>
-            </div>
+      <!-- November General Body Meeting -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/nov-gbm">
+            <img
+              class="normal"
+              alt="App Engine"
+              src="/resources/events/oct-gbm.png"
+              target="_blank"
+            />
+          </a>
         </div>
-
-        <!-- Golang Event -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/golang">
-                    <img class="normal" alt="App Engine" src="/resources/events/golang.png" target="_blank">
-                </a>
-            </div>
-            <h3>Coding with Golang</h3>
-            <strong class="event-type">Workshop</strong>
-            <span class="event-date">October 21st, 2021</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Join us virtually or in person to learn the basics of Go, a statically typed Google-developed language focused 
-                on simplicity and efficiency, and build a Discord bot! This is a collaborative workshop with KnightHacks.
-                <br /><br />
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/golang" class="event-rsvp btn">RSVP</a>
-                <a href="/events/golang" class="event-details btn btn-secondary">More Details</a>
-            </div>
+        <h3>November General Body Meeting</h3>
+        <strong class="event-type">Meeting</strong>
+        <span class="event-date">November 8th, 2021</span>
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Join GDSC UCF for our monthly General Body Meeting, where we'll be
+          going over our events for the month, how to get involved, and wrapping
+          up with a guest speaker presentation before our post-GBM social at
+          Gringos!
+          <br /><br />
+        </p>
+        <div class="event-buttons">
+          <a target="_blank" href="/rsvp/nov-gbm" class="event-rsvp btn"
+            >RSVP</a
+          >
+          <a href="/events/nov-gbm" class="event-details btn btn-secondary"
+            >More Details</a
+          >
         </div>
+      </div>
 
-        <!-- Portfolio Event 2 -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/portfolio">
-                    <img class="normal" alt="App Engine" src="/resources/events/portfolio.png" target="_blank">
-                </a>
-            </div>
-            <h3>Building a Portfolio Site Framework in HTML & CSS</h3>
-            <strong class="event-type">Workshop</strong>
-            <span class="event-date">October 18th, 2021</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Make a splash and build your HTML & CSS skills while creating the framework for your own personal 
-                website! This workshop is the second of three in our October Personal Portfolio Website workshop series. 
-                <br /><br />
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/portfolio" class="event-rsvp btn">RSVP</a>
-                <a href="/events/portfolio" class="event-details btn btn-secondary">More Details</a>
-            </div>
+      <h3 class="divider">Past Events</h3>
+
+      <!-- Portfolio Event 3 -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/javascript-features">
+            <img
+              class="normal"
+              alt="App Engine"
+              src="/resources/events/javascript.png"
+              target="_blank"
+            />
+          </a>
         </div>
-        
-        <!-- October GBM -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/oct-gbm">
-                    <img class="normal" alt="App Engine" src="/resources/events/oct-gbm.png" target="_blank">
-                </a>
-            </div>
-            <h3>October General Body Meeting</h3>
-            <strong class="event-type">Meeting</strong>
-            <span class="event-date">October 15th, 2021</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Join GDSC UCF for our monthly General Body Meeting, where we'll be sharing what GDSC is about, 
-                introducing our core team, going over our events for the month and how to get involved, and 
-                wrapping up with a guest speaker presentation! 
-                <br /><br />
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/oct-gbm" class="event-rsvp btn">RSVP</a>
-                <a href="/events/oct-gbm" class="event-details btn btn-secondary">More Details</a>
-            </div>
+        <h3>Creating Responsive Website Features in JavaScript</h3>
+        <strong class="event-type">Workshop</strong>
+        <span class="event-date">October 25th, 2021</span>
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Join the GDSC UCF in part three of our Portfolio Website Building
+          series. We'll be going over how to add responsive JavaScript features
+          on a site built with HTML & CSS!
+          <br /><br />
+        </p>
+        <div class="event-buttons">
+          <a target="_blank" href="/rsvp/javascript" class="event-rsvp btn"
+            >RSVP</a
+          >
+          <a
+            href="/events/javascript-features"
+            class="event-details btn btn-secondary"
+            >More Details</a
+          >
         </div>
+      </div>
 
-        <!-- Portfolio Event 1 -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/intro-to-web">
-                    <img class="normal" alt="App Engine" src="/resources/events/html-css-js.png" target="_blank">
-                </a>
-            </div>
-            <h3>Intro to HTML, CSS, and JavaScript</h3>
-            <strong class="event-type">Workshop</strong>
-            <span class="event-date">October 11th, 2021</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Hello World! Get your feet wet with a beginner-friendly workshop introducing the basics of these web-development 
-                languages. This workshop is the first of three in our October workshop series, leading up to creating 
-                your own personal portfolio webpage. 
-                <br /><br />
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/intro-to-web" class="event-rsvp btn">RSVP</a>
-                <a href="/events/intro-to-web/" class="event-details btn btn-secondary">More Details</a>
-            </div>
+      <!-- Golang Event -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/golang">
+            <img
+              class="normal"
+              alt="App Engine"
+              src="/resources/events/golang.png"
+              target="_blank"
+            />
+          </a>
         </div>
-
-        <!-- FE Study Jam -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/fe-study-jam/">
-                    <img class="normal" alt="App Engine" src="/resources/events/fe-study-jam.png" target="_blank">
-                </a>
-            </div>
-            <h3>Foundation Exam Study Jam and Info Session</h3>
-            <strong class="event-type">Workshop</strong>
-            <span class="event-date">August 15th, 2021</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Learn more about GDSC UCF and get cramming with us August 15th at 1PM for a Foundation Exam Study Jam
-                and Info Session! We’ll be going over info about the club and then focusing on prep for the UCF CS Foundation Exam,
-                running through practice problems, handing out a cheat sheet, and covering tips, tricks, and common
-                mistakes.
-                <br /><br />
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/fe-study-jam" class="event-rsvp btn">RSVP</a>
-                <a href="/events/fe-study-jam/" class="event-details btn btn-secondary">More Details</a>
-            </div>
+        <h3>Coding with Golang</h3>
+        <strong class="event-type">Workshop</strong>
+        <span class="event-date">October 21st, 2021</span>
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Join us virtually or in person to learn the basics of Go, a statically
+          typed Google-developed language focused on simplicity and efficiency,
+          and build a Discord bot! This is a collaborative workshop with
+          KnightHacks.
+          <br /><br />
+        </p>
+        <div class="event-buttons">
+          <a target="_blank" href="/rsvp/golang" class="event-rsvp btn">RSVP</a>
+          <a href="/events/golang" class="event-details btn btn-secondary"
+            >More Details</a
+          >
         </div>
+      </div>
 
-        <!-- Web App Event -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/full-stack-web-app/">
-                    <img class="normal" alt="App Engine" src="/resources/events/full-stack.png" target="_blank">
-                </a>
-            </div>
-            <h3>Building a Full Stack Web App</h3>
-            <strong class="event-type">Workshop</strong>
-            <span class="event-date">January 24th, 2020 - February 28th, 2020</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Join the UCF Google Developer Student Club and follow along as we build a full stack web app! We'll introduce
-                you to front end design using HTML, CSS, JS, and React. Next, we’ll dive into creating our app’s code
-                with Python and Flask. Finally, we’ll deploy it on Google’s App Engine while also utilizing Firebase
-                Auth and Datastore.
-                <br /><br />
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/full-stack" class="event-rsvp btn">RSVP</a>
-                <a href="/events/full-stack-web-app/" class="event-details btn btn-secondary">More Details</a>
-            </div>
+      <!-- Portfolio Event 2 -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/portfolio">
+            <img
+              class="normal"
+              alt="App Engine"
+              src="/resources/events/portfolio.png"
+              target="_blank"
+            />
+          </a>
         </div>
-
-        <!-- GCP Event -->
-        <div id="csj5" class="event">
-            <div class="event-badge no-br">
-                <a href="/events/get-started-with-gcp">
-                    <img class="normal" alt="Google Cloud essentials badge"
-                        src="/resources/events/gcp-essentials-badge.png" target="_blank">
-                </a>
-            </div>
-            <h3>Getting Started with Google Cloud</h3>
-            <strong class="event-type">Workshop</strong>
-            <span class="event-date">November 21st, 2020 (2:00pm - 4:00pm Eastern)</span>
-            <!-- <span class="event-date">November 21st, 2020</span> -->
-            <p>
-                Join the UCF and FAU Google Developer Student Clubs and follow along as we explore some of the fundamental
-                concepts and APIs available in the Google Cloud Platform. We'll introduce the Qwiklabs platform and the
-                Google Cloud Platform Console, then dive into creating virtual machines with Compute Engine, setting up
-                Kubernetes clusters with the Google Kubernetes Engine, and then explore networking and HTTP load
-                balancing.
-                <br /><br />
-                After completing this event, members will have earned a badge to show off on their LinkedIn and social
-                media profiles. Members can optionally complete a challenge lab to earn an additional badge.
-            </p>
-            <div class="event-buttons">
-                <a target="_blank" href="/rsvp/get-started-with-gcp" class="event-rsvp btn">RSVP</a>
-                <a href="/events/get-started-with-gcp" class="event-details btn btn-secondary">More Details</a>
-            </div>
+        <h3>Building a Portfolio Site Framework in HTML & CSS</h3>
+        <strong class="event-type">Workshop</strong>
+        <span class="event-date">October 18th, 2021</span>
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Make a splash and build your HTML & CSS skills while creating the
+          framework for your own personal website! This workshop is the second
+          of three in our October Personal Portfolio Website workshop series.
+          <br /><br />
+        </p>
+        <div class="event-buttons">
+          <a target="_blank" href="/rsvp/portfolio" class="event-rsvp btn"
+            >RSVP</a
+          >
+          <a href="/events/portfolio" class="event-details btn btn-secondary"
+            >More Details</a
+          >
         </div>
+      </div>
 
-        <!-- Solution Challenge -->
-        <div id="solution-challenge" class="event">
-            <div class="event-badge">
-                <a href="/solution">
-                    <img class="normal" src="/images/SolutionChallenge.jpg" alt="brainstorm" target="_blank">
-                </a>
-            </div>
-            <h3>Solution Challenge</h3>
-            <strong class="event-type">Projects</strong>
-            <p>
-                The Google Solution Challenge is an annual competition open to the university students under the
-                mentorship
-                umbrella of a GDSC chapter. The solution must feature one or more Google technologies and must address a
-                local problem faced by a business, organization, NGO, etc.
-                <br />
-            </p>
-            <div class="event-buttons">
-                <!-- <a href="/solution" class="event-rsvp btn">Participate</a> -->
-                <!-- <a href="/events/solution-challenge" class="event-details btn btn-secondary-no">More Details</a> -->
-            </div>
-
+      <!-- October GBM -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/oct-gbm">
+            <img
+              class="normal"
+              alt="App Engine"
+              src="/resources/events/oct-gbm.png"
+              target="_blank"
+            />
+          </a>
         </div>
+        <h3>October General Body Meeting</h3>
+        <strong class="event-type">Meeting</strong>
+        <span class="event-date">October 15th, 2021</span>
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Join GDSC UCF for our monthly General Body Meeting, where we'll be
+          sharing what GDSC is about, introducing our core team, going over our
+          events for the month and how to get involved, and wrapping up with a
+          guest speaker presentation!
+          <br /><br />
+        </p>
+        <div class="event-buttons">
+          <a target="_blank" href="/rsvp/oct-gbm" class="event-rsvp btn"
+            >RSVP</a
+          >
+          <a href="/events/oct-gbm" class="event-details btn btn-secondary"
+            >More Details</a
+          >
+        </div>
+      </div>
 
-        <!-- <div class="event">
+      <!-- Portfolio Event 1 -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/intro-to-web">
+            <img
+              class="normal"
+              alt="App Engine"
+              src="/resources/events/html-css-js.png"
+              target="_blank"
+            />
+          </a>
+        </div>
+        <h3>Intro to HTML, CSS, and JavaScript</h3>
+        <strong class="event-type">Workshop</strong>
+        <span class="event-date">October 11th, 2021</span>
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Hello World! Get your feet wet with a beginner-friendly workshop
+          introducing the basics of these web-development languages. This
+          workshop is the first of three in our October workshop series, leading
+          up to creating your own personal portfolio webpage.
+          <br /><br />
+        </p>
+        <div class="event-buttons">
+          <a target="_blank" href="/rsvp/intro-to-web" class="event-rsvp btn"
+            >RSVP</a
+          >
+          <a
+            href="/events/intro-to-web/"
+            class="event-details btn btn-secondary"
+            >More Details</a
+          >
+        </div>
+      </div>
+
+      <!-- FE Study Jam -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/fe-study-jam/">
+            <img
+              class="normal"
+              alt="App Engine"
+              src="/resources/events/fe-study-jam.png"
+              target="_blank"
+            />
+          </a>
+        </div>
+        <h3>Foundation Exam Study Jam and Info Session</h3>
+        <strong class="event-type">Workshop</strong>
+        <span class="event-date">August 15th, 2021</span>
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Learn more about GDSC UCF and get cramming with us August 15th at 1PM
+          for a Foundation Exam Study Jam and Info Session! We’ll be going over
+          info about the club and then focusing on prep for the UCF CS
+          Foundation Exam, running through practice problems, handing out a
+          cheat sheet, and covering tips, tricks, and common mistakes.
+          <br /><br />
+        </p>
+        <div class="event-buttons">
+          <a target="_blank" href="/rsvp/fe-study-jam" class="event-rsvp btn"
+            >RSVP</a
+          >
+          <a
+            href="/events/fe-study-jam/"
+            class="event-details btn btn-secondary"
+            >More Details</a
+          >
+        </div>
+      </div>
+
+      <!-- Web App Event -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/full-stack-web-app/">
+            <img
+              class="normal"
+              alt="App Engine"
+              src="/resources/events/full-stack.png"
+              target="_blank"
+            />
+          </a>
+        </div>
+        <h3>Building a Full Stack Web App</h3>
+        <strong class="event-type">Workshop</strong>
+        <span class="event-date">January 24th, 2020 - February 28th, 2020</span>
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Join the UCF Google Developer Student Club and follow along as we
+          build a full stack web app! We'll introduce you to front end design
+          using HTML, CSS, JS, and React. Next, we’ll dive into creating our
+          app’s code with Python and Flask. Finally, we’ll deploy it on Google’s
+          App Engine while also utilizing Firebase Auth and Datastore.
+          <br /><br />
+        </p>
+        <div class="event-buttons">
+          <a target="_blank" href="/rsvp/full-stack" class="event-rsvp btn"
+            >RSVP</a
+          >
+          <a
+            href="/events/full-stack-web-app/"
+            class="event-details btn btn-secondary"
+            >More Details</a
+          >
+        </div>
+      </div>
+
+      <!-- GCP Event -->
+      <div id="csj5" class="event">
+        <div class="event-badge no-br">
+          <a href="/events/get-started-with-gcp">
+            <img
+              class="normal"
+              alt="Google Cloud essentials badge"
+              src="/resources/events/gcp-essentials-badge.png"
+              target="_blank"
+            />
+          </a>
+        </div>
+        <h3>Getting Started with Google Cloud</h3>
+        <strong class="event-type">Workshop</strong>
+        <span class="event-date"
+          >November 21st, 2020 (2:00pm - 4:00pm Eastern)</span
+        >
+        <!-- <span class="event-date">November 21st, 2020</span> -->
+        <p>
+          Join the UCF and FAU Google Developer Student Clubs and follow along
+          as we explore some of the fundamental concepts and APIs available in
+          the Google Cloud Platform. We'll introduce the Qwiklabs platform and
+          the Google Cloud Platform Console, then dive into creating virtual
+          machines with Compute Engine, setting up Kubernetes clusters with the
+          Google Kubernetes Engine, and then explore networking and HTTP load
+          balancing.
+          <br /><br />
+          After completing this event, members will have earned a badge to show
+          off on their LinkedIn and social media profiles. Members can
+          optionally complete a challenge lab to earn an additional badge.
+        </p>
+        <div class="event-buttons">
+          <a
+            target="_blank"
+            href="/rsvp/get-started-with-gcp"
+            class="event-rsvp btn"
+            >RSVP</a
+          >
+          <a
+            href="/events/get-started-with-gcp"
+            class="event-details btn btn-secondary"
+            >More Details</a
+          >
+        </div>
+      </div>
+
+      <!-- Solution Challenge -->
+      <div id="solution-challenge" class="event">
+        <div class="event-badge">
+          <a href="/solution">
+            <img
+              class="normal"
+              src="/images/SolutionChallenge.jpg"
+              alt="brainstorm"
+              target="_blank"
+            />
+          </a>
+        </div>
+        <h3>Solution Challenge</h3>
+        <strong class="event-type">Projects</strong>
+        <p>
+          The Google Solution Challenge is an annual competition open to the
+          university students under the mentorship umbrella of a GDSC chapter.
+          The solution must feature one or more Google technologies and must
+          address a local problem faced by a business, organization, NGO, etc.
+          <br />
+        </p>
+        <div class="event-buttons">
+          <!-- <a href="/solution" class="event-rsvp btn">Participate</a> -->
+          <!-- <a href="/events/solution-challenge" class="event-details btn btn-secondary-no">More Details</a> -->
+        </div>
+      </div>
+
+      <!-- <div class="event">
             <div class="event-badge">
                 <a href="https://crio.do/launch/">
                     <img class="normal" src="/images/crio.jpg" alt="Crio.Do logo" target="_blank">
@@ -429,43 +604,67 @@
     </section>
 
     <footer>
-        <div class="footer-main-div">
-
-            <div class="footer-icons">
-                <ul>
-                    <li><a href="https://www.youtube.com/channel/UCGZXVoZ3MMvF9gGfTxsKFVQ?view_as=subscriber"
-                            target="_blank"><i class="y-ic"></i></a></li>
-                    <li>
-                        <a href="https://www.instagram.com/gdscucf/" target="_blank"> <i class="in-ic"></i></a>
-                    </li>
-                    <li><a href="https://discord.gg/Pk269nc" target="_blank"> <i class="d-ic"></i></a></li>
-                    <li>
-                        <a href="https://twitter.com/gdscucf" target="_blank"><i class="tw-ic"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/company/google-developer-student-clubs-at-university-of-central-florida" 
-                            target="_blank"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
+      <div class="footer-main-div">
+        <div class="footer-icons">
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCGZXVoZ3MMvF9gGfTxsKFVQ?view_as=subscriber"
+                target="_blank"
+                ><i class="y-ic"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/gdscucf/" target="_blank">
+                <i class="in-ic"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://discord.gg/Pk269nc" target="_blank">
+                <i class="d-ic"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/gdscucf" target="_blank"
+                ><i class="tw-ic"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/google-developer-student-clubs-at-university-of-central-florida"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="footer-menu-one">
-            <ul class="credits">
-                <li><span>Theme made with <i class="fas fa-heart" style="color: red;"></i> by <a
-                            href="https://github.com/Joy2469/WebsiteClub">
-                            Aditi Jain</a></span><span class="h-om cred-sep">, </span>
-                    <span>Modified by </span><a href="https://github.com/bthaw2018"><span>Benjamin Thaw</span></a>
-                </li>
-            </ul>
-            <br />
-            <ul class="info-links">
-
-                <li><a href="https://developers.google.com/community/dsc">Google Developer Student Clubs</a><span
-                        class="h-om"> @ </span><a href="https://ucf.edu">University of Central Florida</a></li>
-            </ul>
-
-        </div>
+      <div class="footer-menu-one">
+        <ul class="credits">
+          <li>
+            <span
+              >Theme made with
+              <i class="fas fa-heart" style="color: red"></i> by
+              <a href="https://github.com/Joy2469/WebsiteClub">
+                Aditi Jain</a
+              ></span
+            ><span class="h-om cred-sep">, </span> <span>Modified by </span
+            ><a href="https://github.com/bthaw2018"
+              ><span>Benjamin Thaw</span></a
+            >
+          </li>
+        </ul>
+        <br />
+        <ul class="info-links">
+          <li>
+            <a href="https://developers.google.com/community/dsc"
+              >Google Developer Student Clubs</a
+            ><span class="h-om"> @ </span
+            ><a href="https://ucf.edu">University of Central Florida</a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
     <div class="home-page-circle-1"></div>
@@ -476,6 +675,5 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script id="navS" src="/resources/nav.js?page=events"></script>
     <script src="/resources/scripts.js"></script>
-</body>
-
+  </body>
 </html>

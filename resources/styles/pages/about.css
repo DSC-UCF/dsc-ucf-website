@@ -1,117 +1,112 @@
 .discover-main-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-grow: 1;
-    margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-top: 10px;
 }
 
 .discover-main-section .team-image {
-    background-image: url(/images/team.svg);
-    flex-grow: 1;
-    max-height: 45vh;
-    min-width: 45vw;
+  background-image: url(/images/team.svg);
+  flex-grow: 1;
+  max-height: 45vh;
+  min-width: 45vw;
 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .icon-section {
-    display: flex;
+  display: flex;
 }
-
 
 .faculty-sponser {
-    color: inherit;
-    /* text-decoration: none; */
-    padding: 1rem;
-    padding-left: 0rem;
+  color: inherit;
+  /* text-decoration: none; */
+  padding: 1rem;
+  padding-left: 0rem;
 }
 .faculty-sponser:hover {
-    color: #adadad;
+  color: #adadad;
 }
 .icon :not(.material-icons) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: .5rem;
-    padding: .75rem;
-    width: 170px;
-    height: 180px;
-    background-color: #202027;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.75rem;
+  width: 170px;
+  height: 180px;
+  background-color: #202027;
+  margin-bottom: 2rem;
 }
 
 .icon img {
-    width: 100px;
+  width: 100px;
 }
 
 @media (max-width: 900px) {
-    .discover-main-section {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .-section {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .discover-main-section .team-image {
-        display: none;
-    }
+  .discover-main-section .team-image {
+    display: none;
+  }
 }
-
 
 /*TEAM INFO*/
 /*LINE IN THE MIDDLE*/
 
-
 /*codepen by loan sameli*/
 .team_description {
-    margin-top: 100px;
-    margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
-
 .person {
-    width: 700px;
-    padding-left: 230px;
-    padding-top: 30px;
-    padding-bottom: 70px;
-    min-height: 200px;
-    margin: auto;
-    position: relative;
-    align-content: center;
-
+  width: 700px;
+  padding-left: 230px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  min-height: 200px;
+  margin: auto;
+  position: relative;
+  align-content: center;
 }
 
 .person-badge {
-    width: 200px;
-    height: 200px;
-    /* border-radius: 0 0 100px 100px; */
-    overflow: hidden;
-    transform: rotate(0deg);
-    /* To force its own layer */
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    width: 200px;
-    box-shadow: gray 0 0 10px;
+  width: 200px;
+  height: 200px;
+  /* border-radius: 0 0 100px 100px; */
+  overflow: hidden;
+  transform: rotate(0deg);
+  /* To force its own layer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 200px;
+  box-shadow: gray 0 0 10px;
 }
 
 .person-badge img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .person-badge:before,
 .person-badge:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    border-radius: 50%;
-    z-index: -1;
-    width: 200px;
-    height: 200px;
-    transition: 500ms;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  transition: 500ms;
 }
 
 /* .person-badge:after {
@@ -143,17 +138,16 @@
     background: linear-gradient(to top, #F88 0%, #EEE 100%);
 } */
 
-
 .person-badge:hover:after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .person-badge img {
-    width: 200px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 500ms;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 500ms;
 }
 
 /* .person-badge img.peculiar {
@@ -177,7 +171,9 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.person-badge:hover, .person-badge:focus, .person-badge:active {
+.person-badge:hover,
+.person-badge:focus,
+.person-badge:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -189,52 +185,55 @@
 
 /*codepen by loan sameli end*/
 .person h3 {
-    margin: 0;
-    font-weight: 200;
-    font-size: 1.5rem;
+  margin: 0;
+  font-weight: 200;
+  font-size: 1.5rem;
 }
 
 .person p {
-    font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 strong {
-    color: #888;
-    margin: -3px 0 5px 0;
-    display: block;
-    font-size: 0.8em;
+  color: #888;
+  margin: -3px 0 5px 0;
+  display: block;
+  font-size: 0.8em;
 }
 .person {
-    transition: 500ms; 
+  transition: 500ms;
 }
 .person-badge {
-    transition: 500ms; 
+  transition: 500ms;
 }
-.person h3, .person strong, .person p {
-    transition: 500ms; 
+.person h3,
+.person strong,
+.person p {
+  transition: 500ms;
 }
 
 @media (max-width: 750px) {
-    .person {
-        width: unset;
-        padding-left: unset;
-        
-    }
-    .person-badge {
-        display: block;
-        position: unset;
-        margin-bottom: 20px;
-        /* margin-left: 9%;
+  .person {
+    width: unset;
+    padding-left: unset;
+  }
+  .person-badge {
+    display: block;
+    position: unset;
+    margin-bottom: 20px;
+    /* margin-left: 9%;
         margin-right: 9%; */
-        margin: auto;
-        margin-bottom: 15px;
-
-    }
-    .person h3, .person strong, .person p {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-    .person h3, .person strong {
-        text-align: center;
-    }
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .person h3,
+  .person strong,
+  .person p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .person h3,
+  .person strong {
+    text-align: center;
+  }
 }
