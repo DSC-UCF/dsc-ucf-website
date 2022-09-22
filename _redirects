@@ -1,129 +1,134 @@
 # Redirects
 
 # General Club
-/go/discord                     https://discord.gg/Pk269nc
-/go/apple                       https://apple.com
-/go/certify                     /blogs/blog-post-1/
 
+/go/discord https://discord.gg/Pk269nc
+/go/apple https://apple.com
+/go/certify /blogs/blog-post-1/
 
 # Getting Started with Google Cloud
-/googlecloud                            /events/get-started-with-gcp/
-/events/googlecloud                     /events/get-started-with-gcp
-/events/getting-started-with-google-cloud /events/get-started-with-gcp
-/events/getting-started-with-gcp        /events/get-started-with-gcp
-/events/get-started-with-gcp            /events/get-started-with-gcp
-/events/gcp                             /events/get-started-with-gcp
-/events/google-cloud                    /events/get-started-with-gcp
-/events/start-with-google-cloud         /events/get-started-with-gcp
-/events/start-with-googlecloud          /events/get-started-with-gcp
-/events/start-with-gcp                  /events/get-started-with-gcp
-/events/gcp-essentials                  /events/get-started-with-gcp
-/events/google-cloud-essentials         /events/get-started-with-gcp
-/events/googlecloud-essentials          /events/get-started-with-gcp
-/events/googlecloudessentials           /events/get-started-with-gcp
 
-/rsvp/get-started-with-gcp              https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-getting-started-with-google-cloud/#/
-/rsvp/get-started-with-google-cloud     /rsvp/get-started-with-gcp
-/rsvp/get-started-with-googlecloud      /rsvp/get-started-with-gcp
-/rsvp/googlecloud                       /rsvp/get-started-with-gcp
-/rsvp/google-cloud                      /rsvp/get-started-with-gcp
-/rsvp/gcp                               /rsvp/get-started-with-gcp
-/rsvp/gcp-essentials                    /rsvp/get-started-with-gcp
-/rsvp/google-cloud-essentials           /rsvp/get-started-with-gcp
-/rsvp/googlecloud-essentials            /rsvp/get-started-with-gcp
-/rsvp/googlecloudessentials             /rsvp/get-started-with-gcp
+/googlecloud /events/get-started-with-gcp/
+/events/googlecloud /events/get-started-with-gcp
+/events/getting-started-with-google-cloud /events/get-started-with-gcp
+/events/getting-started-with-gcp /events/get-started-with-gcp
+/events/get-started-with-gcp /events/get-started-with-gcp
+/events/gcp /events/get-started-with-gcp
+/events/google-cloud /events/get-started-with-gcp
+/events/start-with-google-cloud /events/get-started-with-gcp
+/events/start-with-googlecloud /events/get-started-with-gcp
+/events/start-with-gcp /events/get-started-with-gcp
+/events/gcp-essentials /events/get-started-with-gcp
+/events/google-cloud-essentials /events/get-started-with-gcp
+/events/googlecloud-essentials /events/get-started-with-gcp
+/events/googlecloudessentials /events/get-started-with-gcp
+
+/rsvp/get-started-with-gcp https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-getting-started-with-google-cloud/#/
+/rsvp/get-started-with-google-cloud /rsvp/get-started-with-gcp
+/rsvp/get-started-with-googlecloud /rsvp/get-started-with-gcp
+/rsvp/googlecloud /rsvp/get-started-with-gcp
+/rsvp/google-cloud /rsvp/get-started-with-gcp
+/rsvp/gcp /rsvp/get-started-with-gcp
+/rsvp/gcp-essentials /rsvp/get-started-with-gcp
+/rsvp/google-cloud-essentials /rsvp/get-started-with-gcp
+/rsvp/googlecloud-essentials /rsvp/get-started-with-gcp
+/rsvp/googlecloudessentials /rsvp/get-started-with-gcp
 
 # How To Land An Internship - Q&A
 
-/rsvp/intern-qna                               https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-how-to-land-an-internship-qa-with-interns-from-faang-and-unicorns/
+/rsvp/florida-man https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-how-to-land-an-internship-qa-with-interns-from-faang-and-unicorns/
+
+# How To Land An Internship - Q&A
+
+/rsvp/intern-qna https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-how-to-land-an-internship-qa-with-interns-from-faang-and-unicorns/
 
 # September General Body Meeting
 
-/rsvp/sep-gbm                                  https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-september-gbm/
+/rsvp/sep-gbm https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-september-gbm/
 
 # Intro to React Native
 
-/rsvp/react-native                             https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-intro-to-react-native/
+/rsvp/react-native https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-intro-to-react-native/
 
 # March General Body Meeting
 
-/rsvp/mar-gbm                                  https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-march-gbm-speaker-talk/
+/rsvp/mar-gbm https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-march-gbm-speaker-talk/
 
 # Firebase Technical Event
 
-/rsvp/firebase                                 https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-create-an-online-meme-rating-website-using-google-firebase-and-javascript/
+/rsvp/firebase https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-create-an-online-meme-rating-website-using-google-firebase-and-javascript/
 
 # Project Teams Info Session
 
-/rsvp/project-teams                            https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-project-teams-special-interest-info-session/
+/rsvp/project-teams https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-project-teams-special-interest-info-session/
 
 # January General Body Meeting
 
-/rsvp/jan-gbm                                  https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-january-general-body-meeting/
+/rsvp/jan-gbm https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-january-general-body-meeting/
 
 # Hacking the Technical Interview
 
-/rsvp/technical-interview                      https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-hacking-the-technical-interview/
+/rsvp/technical-interview https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-hacking-the-technical-interview/
 
 # Intro to Python
 
-/rsvp/intro-to-python                          https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-intro-to-python/
+/rsvp/intro-to-python https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-intro-to-python/
 
 # November General Body Meeting
 
-/rsvp/nov-gbm                                  https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-november-general-body-meeting-1/
+/rsvp/nov-gbm https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-november-general-body-meeting-1/
 
 # Creating Responsive Website Features in JavaScript
 
-/rsvp/javascript                               https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-creating-responsive-website-features-in-javascript/
+/rsvp/javascript https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-creating-responsive-website-features-in-javascript/
 
 # Coding with Golang
 
-/rsvp/golang                                   https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-coding-with-golang/
+/rsvp/golang https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-coding-with-golang/
 
 # Building a Portfolio Site Framework in HTML & CSS
 
-/rsvp/portfolio                                https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-building-a-portfolio-site-framework-in-html-css/ 
+/rsvp/portfolio https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-building-a-portfolio-site-framework-in-html-css/
 
 # October General Body Meeting
 
-/rsvp/oct-gbm                                  https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-october-general-body-meeting/
+/rsvp/oct-gbm https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-october-general-body-meeting/
 
 # Intro to HTML, CSS, and JavaScript
 
-/rsvp/intro-to-web                             https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-intro-to-html-css-and-javascript/
+/rsvp/intro-to-web https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-intro-to-html-css-and-javascript/
 
 # Full Stack Web App Event Series
 
-/events/full-stack                             /events/full-stack-web-app
-/events/fullstack                              /events/full-stack-web-app
-/rsvp/full-stack                               https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-building-a-full-stack-web-app-cloud-storage-using-datastore/                        
-/rsvp/fullstack                                /rsvp/full-stack
+/events/full-stack /events/full-stack-web-app
+/events/fullstack /events/full-stack-web-app
+/rsvp/full-stack https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-building-a-full-stack-web-app-cloud-storage-using-datastore/  
+/rsvp/fullstack /rsvp/full-stack
 
 # FE Study Jam
 
-/events/fe-studyjam                     /events/fe-study-jam
-/events/festudyjam                      /events/fe-study-jam
-/rsvp/fe-study-jam                      https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-foundation-exam-study-jam-and-info-session/
-/rsvp/fe-studyjam                       /rsvp/fe-study-jam
-/rsvp/festudyjam                        /rsvp/fe-study-jam 
+/events/fe-studyjam /events/fe-study-jam
+/events/festudyjam /events/fe-study-jam
+/rsvp/fe-study-jam https://gdsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-foundation-exam-study-jam-and-info-session/
+/rsvp/fe-studyjam /rsvp/fe-study-jam
+/rsvp/festudyjam /rsvp/fe-study-jam
 
 # /e pages
-/e/googlecloud                          /events/get-started-with-gcp
-/e/google-cloud                         /e/googlecloud
-/e/gcp                                  /e/googlecloud
-/events/gcp-essentials                  /events/get-started-with-gcp
 
-/e/full-stack                           /events/full-stack
-/e/fullstack                            /e/full-stack
-/e/resources                            https://docs.google.com/document/d/1-kMReDv1vV3S1OfNRJg9qaO9uTjQTu4YlslRk_4iUmM/edit?usp=sharing
+/e/googlecloud /events/get-started-with-gcp
+/e/google-cloud /e/googlecloud
+/e/gcp /e/googlecloud
+/events/gcp-essentials /events/get-started-with-gcp
 
-/e/challenge-1                          https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-solution-challenge-design-series-problem-identification/#/
-/e/challenge1                           /e/challenge-1
-/e/session6                             https://google.qwiklabs.com/quests/41?event=Your&utm_source=qwiklabs&utm_medium=lp&utm_campaign=studyjam
+/e/full-stack /events/full-stack
+/e/fullstack /e/full-stack
+/e/resources https://docs.google.com/document/d/1-kMReDv1vV3S1OfNRJg9qaO9uTjQTu4YlslRk_4iUmM/edit?usp=sharing
+
+/e/challenge-1 https://dsc.community.dev/events/details/developer-student-clubs-university-of-central-florida-presents-solution-challenge-design-series-problem-identification/#/
+/e/challenge1 /e/challenge-1
+/e/session6 https://google.qwiklabs.com/quests/41?event=Your&utm_source=qwiklabs&utm_medium=lp&utm_campaign=studyjam
 
 # keep this below the above section
-/e/:event                       /events/:event
-/e                              /events
 
-
+/e/:event /events/:event
+/e /events
