@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-55GLBH2');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons">
+    <link href="/resources/styles/styles.css" rel="stylesheet">
+    <link href="/resources/styles/pages/index.css" rel="stylesheet">
+    <link href="/resources/styles/pages/event.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="/resources/styles/custom.css" rel="stylesheet">
+
+
+
+    <script src="https://kit.fontawesome.com/6e7b45b5ac.js" crossorigin="anonymous"></script>
+    <title>October General Body Meeting | UCF Developer Student Club</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+
+    <meta name="description"
+        content="Join the UCF and UCF Developer Student Clubs and follow along as we explore some of the fundamental concepts and APIs available in the Google Cloud Platform.">
+    <meta name="keywords" content="Google Developer Student Clubs, UCF, Coding, web, html, css ">
+    <meta property="twitter:image"
+        content="https://storage.googleapis.com/dsc-fau-2020.appspot.com/get-started-with-gcp.png">
+    <meta property="og:image"
+        content="https://storage.googleapis.com/dsc-fau-2020.appspot.com/get-started-with-gcp.png">
+</head>
+
+<body class="container full-height-grow">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55GLBH2" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="main-header">
+        <span class="brand-logo">
+            <a href="/" class="">
+                <img src="/images/logo.png">
+            </a>
+            <a href="/" class="brand-logo-name-a">
+                <div class="brand-logo-name">
+                    <div class="">Developer Student Clubs</div>
+                    <div class="brand-logo-school">University of Central Florida</div>
+                </div>
+            </a>
+        </span>
+        <nav class="main-nav">
+            <div class="navbar">
+                <ul id="nav" class="responsfive">
+                    <!-- Add items in nav.js -->
+                    <li class="mobile-trigger">
+                        <button id="mobile-trigger-link"
+                            class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+                            onclick="mobileNav()">menu
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <aside class="mdc-drawer mdc-drawer--modal mdc-drawer--dismissible">
+        <div class="mdc-drawer__header">
+            <button id="mobile-trigger-link-mn" class="icon mdc-icon-button material-icons mdc-ripple-surface--primary"
+                onclick="mobileNav()">menu
+            </button>
+            <div class="mdc-drawer__title" id="mn-title">
+                <a href="/">
+                    <img id="mn-logo" src="/resources/logos/dsc-fau-full.png" />
+                </a>
+                <!-- <img id="mn-logo" src="/images/logo.png" /> -->
+            </div>
+        </div>
+        <div class="mdc-drawer__content">
+
+            <nav class="mdc-list" id="new-mn-nav" dir="ltr">
+                <a style="display: none" id="mn-sample" class="mdc-list-item mdc-ripple-surface" href="#"
+                    aria-current="page">
+                    <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i> -->
+                    <span class="mdc-list-item__text"></span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mn">
+        <div id="mn-overlay" class="hidden"></div>
+        <nav id="mobile-nav" class="mobile-nav hidden">
+
+            <ul id="m-nav-list">
+                <!-- DO NOT ADD ITEMS -->
+            </ul>
+
+        </nav>
+    </div>
+    <section class="event_description">
+        <div id="csj5" class="event">
+            <div onmousedown="this.classList.add('clicked');" onmouseup="this.classList.remove('clicked');"
+                class="event-badge no-br" style="margin-bottom: 10px;">
+                <a>
+                    <img class=" normal" alt="google cloud essentials icon" src="/resources/events/halloween-gbm.png"
+                        target="_blank">
+                </a>
+            </div>
+            <h3>October General Body Meeting</h3>
+            <strong class="event-type">Meeting</strong>
+            <span class="event-date">October 11th, 2022</span>
+            <!-- <span class="event-date">November 21st, 2020</span> -->
+            <br />
+            <div class="event-buttons" style="margin-left: 25%; margin-right: 25%">
+                <a target="_blank" href="/rsvp/halloween-gbm" class="event-rsvp btn">RSVP</a>
+            </div>
+
+            <br />
+            <iframe class="youtube_embed" width="720" height="405" src="https://www.youtube.com/embed/Jqf52nThBt0"
+                srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}</style>
+                <style>span{height:1.5em;text-align:center;font:60px/1.5 sans-serif;color:white;text-shadow:0 0 0.3em black}</style>
+                <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+                <style>.m-icon{ font-family: 'Material Icons';
+                font-weight: normal;
+                font-style: normal;
+                letter-spacing: normal;
+                text-transform: none;
+                display: inline-block;
+                white-space: nowrap;
+                word-wrap: normal;
+                direction: ltr;
+                -webkit-font-feature-settings: 'liga';
+                pointer-events: none;
+                -webkit-font-smoothing: antialiased;</style>
+                <a href=https://www.youtube.com/embed/Jqf52nThBt0><img src=https://img.youtube.com/vi/Jqf52nThBt0/maxresdefault.jpg alt='Building a Full Stack Web App - Session 1'><span class='m-icon icon'>play_circle_filled</span></a>"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p class="yt-embed-under">
+                <a href="https://youtu.be/Jqf52nThBt0" target="_blank">
+                    Having trouble viewing the video? Click here to open in a new tab.
+                </a>
+            </p>
+            <p>
+                <span class="section_title">Event Information</span>
+                Join us at our monthly general body meeting on October 11th at 6pm EST to learn more about the GDSC and our upcoming
+                events! There will also be a boba tea social event at Happy Lemon right after the meeting!
+                <br />
+            </p>
+            <div class="event_section" id="prerequisites">
+                <span class="section_title">Prerequisites</span>
+                <div>
+                    <span>No prerequisites to join! This is a meeting to let you know about our upcoming
+                        monthly events and how to get involved.
+                        </br></br>
+                        Join in person in Building ENG2 Room 205 or on <a target="blank" class="blue_link"
+                            href="https://tinyurl.com/octgbm-gdsc">Zoom</a>.
+                    </span>
+                </div>
+                <div><br />
+                    <span>For this event, you'll need a working computer with a modern browser (such as <a
+                            target="blank" class="blue_link" href="https://www.google.com/chrome/">Google Chrome</a>)
+                        and a stable
+                        internet connection.
+                    </span><br /><br />
+                </div>
+
+
+            </div>
+            <div class="event_section">
+                <span class="section_title">What you'll learn</span>
+                <ul class="learn_list">
+                    <li>Understand the purpose of the Google DSC</li>
+                    <li>Learn about upcoming events</li>
+                    <li>Meet our team</li>
+                    <li>Learn how to stay updated with our club</li>
+                </ul>
+            </div>
+            <div class="event_section">
+                <span class="section_title">What you'll gain</span>
+                <ul class="learn_list">
+                    <li>Links and resources on how to get connected with us</li>
+                    <li>Get a preview of our events in October</li>
+                    <li>Drink boba and hang out with the club afterwards at Happy Lemon!</li>
+                </ul>
+            </div>
+
+            <p>
+                <span class="section_title">Need help?</span>
+                Our tech leads are here to help! They can help guide you through labs, answer any questions about the
+                content, and provide a more comprehensive overview of the content. Reach out to them in the <a
+                    href="/go/discord">Discord
+                    server</a>.
+                <br /><br />
+                Take the opportunity to discuss these topics with other members in the club. Get to know them, ask
+                questions, and provide help. This is a great way to find potential team members for the Solution
+                Challenge. Make sure to guide members to the correct solution rather than giving them the answer.
+            </p>
+
+        </div>
+
+
+
+
+
+
+    </section>
+
+    <footer>
+        <div class="footer-main-div">
+
+            <div class="footer-icons">
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCGZXVoZ3MMvF9gGfTxsKFVQ?view_as=subscriber"
+                            target="_blank"><i class="y-ic"></i></a></li>
+                    <li>
+                        <a href="https://www.instagram.com/gdscucf/" target="_blank"> <i class="in-ic"></i></a>
+                    </li>
+                    <li><a href="https://discord.gg/Pk269nc" target="_blank"> <i class="d-ic"></i></a></li>
+                    <li>
+                        <a href="https://twitter.com/gdscucf" target="_blank"><i class="tw-ic"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/google-developer-student-clubs-at-university-of-central-florida"
+                            target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-menu-one">
+            <ul class="credits">
+                <li><span>Theme made with <i class="fas fa-heart" style="color: red;"></i> by <a
+                            href="https://github.com/Joy2469/WebsiteClub">
+                            Aditi Jain</a></span><span class="h-om cred-sep">, </span>
+                    <span>Modified by </span><a href="https://github.com/bthaw2018"><span>Benjamin Thaw</span></a>
+                </li>
+            </ul>
+            <br />
+            <ul class="info-links">
+
+                <li><a href="https://developers.google.com/community/dsc">Google Developer Student Clubs</a><span
+                        class="h-om"> @ </span><a href="https://ucf.edu">University of Central Florida</a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <div class="home-page-circle-1"></div>
+    <div class="home-page-circle-2"></div>
+    <div class="home-page-circle-3"></div>
+    <div class="home-page-circle-4"></div>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script id="navS" src="/resources/nav.js?page=fullStack"></script>
+    <script src="/resources/scripts.js"></script>
+</body>
+
+</html>
